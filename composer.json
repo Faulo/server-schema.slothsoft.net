@@ -7,10 +7,11 @@
         "slothsoft",
         "farah-server"
     ],
-    "autoload": {
-        "files": [],
-        "psr-0": []
-    },
+	"autoload" : {
+		"files" : [
+			"farah/config.php"
+		]
+	},
     "require": {
         "php": ">=7.0",
         "slothsoft\/core": "*",
