@@ -4,14 +4,12 @@
 /vendor/
 /log/
 /cache/
-
 tmp/
 temp/
 unused/
-
 *Kopie*
 Thumbs.db
 .DS_Store
-
 /farah/config.php
 /farah/
+/data/
