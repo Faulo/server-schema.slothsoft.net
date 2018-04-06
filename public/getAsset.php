@@ -1,7 +1,8 @@
 <?php
 
 use Slothsoft\Farah\Kernel;
-use Slothsoft\Farah\RequestProcessor\AssetRequestProcessor;
+use Slothsoft\Farah\RequestStrategy\AssetRequestStrategy;
+use Slothsoft\Farah\ResponseStrategy\EchoResponseStrategy;
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
@@ -15,4 +16,5 @@ if (strpos($path, 'farah://') !== 0) {
     $path = "farah://$path";
 }
 
-Kernel::processPathRequest($path, new AssetRequestProcessor());
+$kernel = new Kernel(new AssetRequestStrategy(), new EchoResponseStrategy());
+$kernel->processPath($path);
