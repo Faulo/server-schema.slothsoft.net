@@ -1,19 +1,23 @@
 <?php
 declare(strict_types = 1);
-use Slothsoft\Farah\Kernel;
+use Slothsoft\Farah\Http\MessageFactory;
 use Slothsoft\Farah\ModuleTests\AbstractTestCase;
-use Slothsoft\Farah\RequestStrategy\PageRequestStrategy;
-use Slothsoft\Farah\ResponseStrategy\EchoResponseStrategy;
+use Slothsoft\Farah\RequestStrategy\LookupPageStrategy;
 
 class IndexTest extends AbstractTestCase
 {
     public function testIndex()
     {
-        ob_start();
-        $kernel = new Kernel(new PageRequestStrategy(), new EchoResponseStrategy());
-        $kernel->processPath('/');
-        $data = ob_get_contents();
-        ob_end_clean();
+        $_SERVER['REQUEST_URI'] = '/';
+        
+        $requestStrategy = new LookupPageStrategy();
+        
+        $request = MessageFactory::createServerRequest($_SERVER, $_REQUEST, $_FILES);
+        
+        $response = $requestStrategy->process($request);
+        
+        $data = stream_get_contents($response->getBody()->detach());
+        
         $doc = new DOMDocument();
         $this->assertTrue($doc->loadXML($data));
     }

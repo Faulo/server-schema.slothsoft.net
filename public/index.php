@@ -1,14 +1,16 @@
 <?php
 
 use Slothsoft\Farah\Kernel;
-use Slothsoft\Farah\RequestStrategy\PageRequestStrategy;
-use Slothsoft\Farah\ResponseStrategy\EchoResponseStrategy;
+use Slothsoft\Farah\Http\MessageFactory;
+use Slothsoft\Farah\RequestStrategy\LookupPageStrategy;
+use Slothsoft\Farah\ResponseStrategy\SendHeaderAndBodyStrategy;
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
-$path = $_SERVER['REQUEST_URI'];
+$requestStrategy = new LookupPageStrategy();
+$responseStrategy = new SendHeaderAndBodyStrategy();
 
-$path = explode('?', $path, 2)[0];
+$request = MessageFactory::createServerRequest($_SERVER, $_REQUEST, $_FILES);
 
-$kernel = new Kernel(new PageRequestStrategy(), new EchoResponseStrategy());
-$kernel->processPath($path);
+$kernel = new Kernel($requestStrategy, $responseStrategy);
+$kernel->handle($request);

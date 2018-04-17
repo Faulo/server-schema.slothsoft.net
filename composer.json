@@ -9,7 +9,7 @@
     ],
     "autoload": {
         "files": [
-            "farah/config.php"
+            "config.php"
         ]
     },
     "require": {
