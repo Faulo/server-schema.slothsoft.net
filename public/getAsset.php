@@ -12,5 +12,5 @@ $responseStrategy = new SendHeaderAndBodyStrategy();
 
 $request = MessageFactory::createServerRequest($_SERVER, $_REQUEST, $_FILES);
 
-$kernel = new Kernel($requestStrategy, $responseStrategy);
-$kernel->handle($request);
+$kernel = Kernel::getInstance();
+$kernel->handle($requestStrategy, $responseStrategy, $request);
