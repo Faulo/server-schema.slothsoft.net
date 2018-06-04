@@ -8,5 +8,5 @@ include __DIR__ . '/../../global/slothsoft.farah.php';
 //include __DIR__ . '/../../global/slothsoft.minecraft.php';
 //include __DIR__ . '/../../global/slothsoft.mtg.php';
 
-Kernel::setCurrentSitemap('farah://slothsoft@schema/sitemap');
+Kernel::setCurrentSitemap('farah://slothsoft@schema.slothsoft.net/sitemap');
 Dictionary::setSupportedLanguages('en-us');

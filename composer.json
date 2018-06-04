@@ -1,32 +1,36 @@
 {
-    "name": "slothsoft/schema.slothsoft.net",
-    "type": "project",
-    "description": "schema.slothsoft.net",
-    "license": "GPL",
-    "keywords": [
-        "farah-server",
-        "slothsoft"
-    ],
-    "autoload": {
-        "files": [
-            "config.php"
-        ]
-    },
-    "require": {
-        "php": ">=7.0",
-        "slothsoft/core": "dev-master",
-        "slothsoft/farah": "dev-master",
-        "slothsoft/schema": "dev-master"
-    },
-    "require-dev": {
-        "phpunit/phpunit": ">=6.5"
-    },
-    "autoload-dev": {
-        "classmap": [
-            "tests/"
-        ]
-    },
-    "classmap-authoritative": true,
-    "minimum-stability": "dev",
-    "prefer-stable": true
+	"name" : "slothsoft/schema.slothsoft.net",
+	"type" : "project",
+	"description" : "schema.slothsoft.net",
+	"license" : "GPL",
+	"keywords" : [
+		"farah-module",
+		"farah-server",
+		"slothsoft"
+	],
+	"autoload" : {
+		"files" : [
+			"config.php",
+			"src/registerModule.php"
+		]
+	},
+	"require" : {
+		"php" : "^7.2",
+		"slothsoft/core" : "dev-master",
+		"slothsoft/amber" : "dev-master",
+		"slothsoft/farah" : "dev-master",
+		"slothsoft/savegame" : "dev-master",
+		"slothsoft/schema" : "dev-master"
+	},
+	"require-dev" : {
+		"phpunit/phpunit" : "^6.5"
+	},
+	"autoload-dev" : {
+		"classmap" : [
+			"tests/"
+		]
+	},
+	"classmap-authoritative" : true,
+	"minimum-stability" : "dev",
+	"prefer-stable" : true
 }

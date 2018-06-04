@@ -13,3 +13,5 @@ Thumbs.db
 /farah/config.php
 /farah/
 /data/
+.tmp
+*.tmp
