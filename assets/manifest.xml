@@ -13,6 +13,9 @@
     	<fragment use="document" name="amber">
 	    	<use-document ref="//slothsoft@amber/schema/amberdata" name="amberdata"/>
 	   	</fragment>
+    	<fragment use="document" name="cron">
+    		<use-document ref="//slothsoft@cron/schema/instructions" name="instructions"/>
+    	</fragment>
     	<fragment use="document" name="farah">
 	    	<use-document ref="//slothsoft@farah/schema/module" name="module"/>
 	    	<use-document ref="//slothsoft@farah/schema/sitemap" name="sitemap"/>
