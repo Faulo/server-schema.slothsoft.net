@@ -31,10 +31,7 @@
         ]
     },
     "classmap-authoritative": true,
-    "minimum-stability": "dev",
-    "prefer-stable": true,
     "scripts": {
         "post-autoload-dump": "Slothsoft\\Core\\ServerEnvironment::cleanCacheDirectory"
-    },
-    "version": "1.0.0"
+    }
 }
