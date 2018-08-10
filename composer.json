@@ -16,11 +16,11 @@
     },
     "require": {
         "php": "^7.2",
-        "slothsoft/amber": "dev-master",
-        "slothsoft/core": "dev-master",
-        "slothsoft/farah": "dev-master",
-        "slothsoft/savegame": "dev-master",
-        "slothsoft/schema": "dev-master"
+        "slothsoft/amber": "*",
+        "slothsoft/core": "*",
+        "slothsoft/farah": "*",
+        "slothsoft/savegame": "*",
+        "slothsoft/schema": "*"
     },
     "require-dev": {
         "phpunit/phpunit": "^6.5"
@@ -35,5 +35,6 @@
     "prefer-stable": true,
     "scripts": {
         "post-autoload-dump": "Slothsoft\\Core\\ServerEnvironment::cleanCacheDirectory"
-    }
+    },
+    "version": "1.0.0"
 }
