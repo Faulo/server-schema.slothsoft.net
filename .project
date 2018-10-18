@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
 	<name>server-schema.slothsoft.net</name>
-	<comment/>
-	<projects><project>/slothsoft-amber</project><project>/slothsoft-core</project><project>/slothsoft-cron</project><project>/slothsoft-farah</project><project>/slothsoft-savegame</project><project>/slothsoft-schema</project></projects>
+	<comment></comment>
+	<projects>
+		<project>slothsoft-amber</project>
+		<project>slothsoft-core</project>
+		<project>slothsoft-cron</project>
+		<project>slothsoft-farah</project>
+		<project>slothsoft-savegame</project>
+		<project>slothsoft-schema</project>
+	</projects>
 	<buildSpec>
 		<buildCommand>
 			<name>org.eclipse.php.composer.core.builder.buildPathManagementBuilder</name>
@@ -29,11 +36,11 @@
 		<nature>org.eclipse.php.core.PHPNature</nature>
 		<nature>org.eclipse.wst.common.project.facet.core.nature</nature>
 	</natures>
-	
-<linkedResources>
-    <link>
-        <name>vendor/slothsoft</name>
-        <type>2</type>
-        <locationURI>virtual:/virtual</locationURI>
-    </link>
-</linkedResources></projectDescription>
+	<linkedResources>
+		<link>
+			<name>vendor/slothsoft</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+	</linkedResources>
+</projectDescription>
