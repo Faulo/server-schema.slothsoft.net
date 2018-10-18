@@ -31,10 +31,10 @@
     
     <fragment name="pages">
     	<fragment name="index">
-    		<use-template ref="/xsl/index" name="index"/>
+    		<use-template ref="/xsl/index"/>
     		<use-document ref="/schemata" name="schemata"/>
     		<use-document ref="//slothsoft@farah/sites" name="sites"/>
-    		<link-stylesheet ref="/css/theme" name="default"/>
+    		<link-stylesheet ref="/css/theme"/>
     	</fragment>
     	<fragment name="schema">
 	    	<fragment name="home">
