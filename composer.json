@@ -34,5 +34,12 @@
     "classmap-authoritative": true,
     "scripts": {
         "post-autoload-dump": "Slothsoft\\Core\\ServerEnvironment::cleanCacheDirectory"
-    }
+    },
+    "authors": [
+        {
+            "name": "Daniel Schulz",
+            "email": "info.slothsoft@gmai.com"
+        }
+    ],
+    "homepage": "http://schema.slothsoft.net"
 }
