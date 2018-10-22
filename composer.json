@@ -2,7 +2,7 @@
     "name": "slothsoft/schema.slothsoft.net",
     "type": "project",
     "description": "schema.slothsoft.net",
-    "license": "GPL",
+    "license": "WTFPL",
     "keywords": [
         "slothsoft",
         "farah-module",
