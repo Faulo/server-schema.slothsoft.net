@@ -1,0 +1,177 @@
+<?xml version="1.0"?>
+<xsd:schema targetNamespace="http://schema.slothsoft.net/trialoftwo/game"
+	xmlns="http://schema.slothsoft.net/trialoftwo/game" xmlns:stg="http://schema.slothsoft.net/trialoftwo/game"
+	xmlns:ssv="http://schema.slothsoft.net/schema/versioning" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	elementFormDefault="qualified" attributeFormDefault="unqualified">
+
+	<xsd:annotation>
+		<xsd:appinfo>
+			<ssv:info version="1.0">
+				<ssv:name>Trial of Two Game Data</ssv:name>
+				<ssv:version>0.1</ssv:version>
+				<ssv:revision>R20200324</ssv:revision>
+				<ssv:prefix>stg</ssv:prefix>
+				<ssv:namespace>http://schema.slothsoft.net/trialoftwo/game</ssv:namespace>
+				<ssv:author email="daniel.lio.schulz@gmail.com">Daniel Schulz</ssv:author>
+				<ssv:description><![CDATA[
+This namespace defines elements to describe the game Trial of Two: The Dojo.
+				]]></ssv:description>
+				<ssv:changelog><![CDATA[
+*** Version 0.1 ***
+	R20200324
+		- initial release
+				]]></ssv:changelog>
+			</ssv:info>
+		</xsd:appinfo>
+	</xsd:annotation>
+
+	<xsd:attributeGroup name="schemaVersion">
+		<xsd:attribute name="version" type="xsd:token" use="required" fixed="0.1">
+			<xsd:annotation>
+				<xsd:documentation>The schema version used by the instance document.</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+	</xsd:attributeGroup>
+
+	<xsd:element name="game" type="Game"/>
+	
+	<xsd:complexType name="Game">
+		<xsd:sequence>
+			<xsd:element name="sessions">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="session" type="GameSession" minOccurs="0" maxOccurs="unbounded"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+		</xsd:sequence>
+		<xsd:attributeGroup ref="schemaVersion" />
+	</xsd:complexType>
+	
+	<xsd:complexType name="GameSession">
+		<xsd:sequence>
+			<xsd:element name="version" type="Version"/>
+			<xsd:element name="start" type="datetime"/>
+			<xsd:element name="end" type="datetime"/>
+			<xsd:element name="scene" type="SceneName"/>
+			<xsd:element name="rooms">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="room" type="Room" minOccurs="0" maxOccurs="unbounded"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="events">
+				<xsd:complexType>
+					<xsd:choice minOccurs="0" maxOccurs="unbounded">
+						<xsd:element name="moveEvent" type="MoveEvent"/>
+						<xsd:element name="hurtEvent" type="HurtEvent"/>
+						<xsd:element name="deathEvent" type="DeathEvent"/>
+					</xsd:choice>
+				</xsd:complexType>
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+	
+	<xsd:complexType name="Room">
+		<xsd:sequence>
+			<xsd:element name="name" type="RoomName" />
+			<xsd:element name="roomEntered" type="datetime" minOccurs="0"/>
+			<xsd:element name="battleStarted" type="datetime" minOccurs="0"/>
+			<xsd:element name="roomCleared" type="datetime" minOccurs="0"/>
+			<xsd:element name="isCleared" type="bool" />
+			<xsd:element name="isGameOver" type="bool" />
+		</xsd:sequence>
+	</xsd:complexType>
+	
+	<xsd:complexType name="Event">
+		<xsd:sequence>
+			<xsd:element name="name" type="EventName" />
+			<xsd:element name="time" type="datetime" />
+			<xsd:element name="entity" type="EntityInfo"/>
+			<xsd:element name="players" type="PlayersInfo"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	
+	<xsd:complexType name="MoveEvent">
+		<xsd:complexContent>
+			<xsd:extension base="Event">
+				<xsd:sequence>
+					<xsd:element name="chainLength" type="int" />
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	
+	<xsd:complexType name="HurtEvent">
+		<xsd:complexContent>
+			<xsd:extension base="Event">
+				<xsd:sequence>
+					<xsd:element name="damageAmount" type="int" />
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	
+	<xsd:complexType name="DeathEvent">
+		<xsd:complexContent>
+			<xsd:extension base="Event">
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	
+	<xsd:complexType name="PlayersInfo">
+		<xsd:sequence>
+			<xsd:element name="playerOne" type="EntityInfo" />
+			<xsd:element name="playerTwo" type="EntityInfo" />
+			<xsd:element name="distance" type="float"/>
+			<xsd:element name="oneSeesTwo" type="bool"/>
+			<xsd:element name="twoSeesOne" type="bool"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	
+	<xsd:complexType name="EntityInfo">
+		<xsd:sequence>
+			<xsd:element name="name" type="EntityName"/>
+			<xsd:element name="currentRoom" type="RoomName"/>
+			<xsd:element name="localPositionX" type="float"/>
+			<xsd:element name="localPositionY" type="float"/>
+			<xsd:element name="localPositionZ" type="float"/>
+			<xsd:element name="normalizedHitPoints" type="float"/>
+			<xsd:element name="focussedEntity" type="EntityName"/>
+			<xsd:element name="isAlive" type="bool"/>
+			<xsd:element name="isAirborne" type="bool"/>
+			<xsd:element name="isStunned" type="bool"/>
+			<xsd:element name="isDizzy" type="bool"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	
+	<xsd:simpleType name="Version">
+		<xsd:restriction base="xsd:token"/>
+	</xsd:simpleType>
+	<xsd:simpleType name="SceneName">
+		<xsd:restriction base="xsd:token"/>
+	</xsd:simpleType>
+	<xsd:simpleType name="RoomName">
+		<xsd:restriction base="xsd:token"/>
+	</xsd:simpleType>
+	<xsd:simpleType name="EventName">
+		<xsd:restriction base="xsd:token"/>
+	</xsd:simpleType>
+	<xsd:simpleType name="EntityName">
+		<xsd:restriction base="xsd:token"/>
+	</xsd:simpleType>
+	
+	<xsd:simpleType name="bool">
+		<xsd:restriction base="xsd:boolean"/>
+	</xsd:simpleType>
+	<xsd:simpleType name="float">
+		<xsd:restriction base="xsd:float"/>
+	</xsd:simpleType>
+	<xsd:simpleType name="int">
+		<xsd:restriction base="xsd:int"/>
+	</xsd:simpleType>
+	<xsd:simpleType name="datetime">
+		<xsd:restriction base="xsd:dateTime"/>
+	</xsd:simpleType>
+</xsd:schema>

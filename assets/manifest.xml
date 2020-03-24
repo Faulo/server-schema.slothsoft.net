@@ -9,7 +9,7 @@
     	<use-document ref="/schemata" name="schemata"/>
     </directory>
     
-    <fragment name="schemata">
+    <directory name="schemata">
     	<fragment use="document" name="amber">
 	    	<use-document ref="//slothsoft@amber/schema/amberdata" name="amberdata"/>
 	   	</fragment>
@@ -27,7 +27,10 @@
     	<fragment use="document" name="schema">
 	    	<use-document ref="//slothsoft@schema/schema/versioning" name="versioning"/>
 	    </fragment>
-    </fragment>
+		<directory use="document" name="trialoftwo">
+			<resource-directory use="document" name="game" type="application/x-xsd+xml" />
+		</directory>
+    </directory>
     
     <fragment name="pages">
     	<fragment name="index">
