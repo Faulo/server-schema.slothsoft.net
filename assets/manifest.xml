@@ -28,7 +28,7 @@
 	    	<use-document ref="//slothsoft@schema/schema/versioning" name="versioning"/>
 	    </fragment>
 		<directory use="document" name="trialoftwo">
-			<resource-directory use="document" name="game" type="application/x-xsd+xml" />
+			<resource-directory use="document" name="database" type="application/x-xsd+xml" />
 		</directory>
     </directory>
     
