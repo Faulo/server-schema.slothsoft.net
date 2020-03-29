@@ -9,7 +9,7 @@
 			<ssv:info version="1.0">
 				<ssv:name>Trial of Two Game Database</ssv:name>
 				<ssv:version>0.1</ssv:version>
-				<ssv:revision>R20200325</ssv:revision>
+				<ssv:revision>R20200329</ssv:revision>
 				<ssv:prefix>std</ssv:prefix>
 				<ssv:namespace>http://schema.slothsoft.net/trialoftwo/database</ssv:namespace>
 				<ssv:author email="daniel.lio.schulz@gmail.com">Daniel Schulz</ssv:author>
@@ -18,6 +18,9 @@ This namespace defines elements to describe the game Trial of Two: The Dojo.
 				]]></ssv:description>
 				<ssv:changelog><![CDATA[
 *** Version 0.1 ***
+	R20200329
+		- remove Incident::name
+		- add MoveIncident::move
 	R20200325
 		- rename normalizedHitPoints to normalizedHP
 		- add <spawnIncident>
@@ -84,13 +87,13 @@ This namespace defines elements to describe the game Trial of Two: The Dojo.
 			<xsd:element name="entity" type="EntityInfo"/>
 			<xsd:element name="players" type="PlayersInfo"/>
 		</xsd:sequence>
-		<xsd:attribute name="name" type="IncidentName" use="required"/>
 		<xsd:attribute name="time" type="datetime" use="required"/>
 	</xsd:complexType>
 	
 	<xsd:complexType name="MoveIncident">
 		<xsd:complexContent>
 			<xsd:extension base="Incident">
+				<xsd:attribute name="move" type="MoveName" use="required"/>
 				<xsd:attribute name="chainLength" type="int" use="required"/>
 			</xsd:extension>
 		</xsd:complexContent>
@@ -152,7 +155,7 @@ This namespace defines elements to describe the game Trial of Two: The Dojo.
 	<xsd:simpleType name="RoomName">
 		<xsd:restriction base="xsd:token"/>
 	</xsd:simpleType>
-	<xsd:simpleType name="IncidentName">
+	<xsd:simpleType name="MoveName">
 		<xsd:restriction base="xsd:token"/>
 	</xsd:simpleType>
 	<xsd:simpleType name="EntityName">
