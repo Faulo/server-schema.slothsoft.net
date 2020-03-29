@@ -49,4 +49,7 @@
 	<p key="doc/attributes-in-group">Attributes in this group:</p>
 	<p key="doc/elements-in-content-model">Elements which use this content model:</p>
 	<p key="doc/attributes-in-content-model">Attributes which use this content model:</p>
+	
+	<p key="home/changelog">Changelog of most recent release:</p>
+	<p key="doc/changelog">Changelog</p>
 </html>
