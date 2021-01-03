@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5b490ea2ee0d2251ef6bc5045873226a",
+    "content-hash": "59622489d7c12a4715c08dae641a7b9f",
     "packages": [
         {
             "name": "container-interop/container-interop",
@@ -1444,12 +1444,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Faulo/slothsoft-farah.git",
-                "reference": "3731a5e48401f26691136ce255a7ac9bc425a517"
+                "reference": "dd36e38f5d89cffa0b41688b18048aacd01e2366"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Faulo/slothsoft-farah/zipball/3731a5e48401f26691136ce255a7ac9bc425a517",
-                "reference": "3731a5e48401f26691136ce255a7ac9bc425a517",
+                "url": "https://api.github.com/repos/Faulo/slothsoft-farah/zipball/dd36e38f5d89cffa0b41688b18048aacd01e2366",
+                "reference": "dd36e38f5d89cffa0b41688b18048aacd01e2366",
                 "shasum": ""
             },
             "require": {
@@ -1480,7 +1480,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-develop": "1.3.x-dev"
+                    "dev-develop": "1.4.x-dev"
                 }
             },
             "autoload": {
@@ -1512,7 +1512,7 @@
                 "issues": "https://github.com/Faulo/slothsoft-farah/issues",
                 "source": "https://github.com/Faulo/slothsoft-farah/tree/develop"
             },
-            "time": "2021-01-03T17:04:50+00:00"
+            "time": "2021-01-03T19:05:01+00:00"
         },
         {
             "name": "slothsoft/savegame",
@@ -1573,33 +1573,38 @@
         },
         {
             "name": "slothsoft/schema",
-            "version": "1.0.4",
+            "version": "dev-develop",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Faulo/slothsoft-schema.git",
-                "reference": "91fd0dbba13480839c4c39fd7f0458daa5b39a44"
+                "reference": "22cb40d723de17f0cbcc4f7986b7b791cbc3de7e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Faulo/slothsoft-schema/zipball/91fd0dbba13480839c4c39fd7f0458daa5b39a44",
-                "reference": "91fd0dbba13480839c4c39fd7f0458daa5b39a44",
+                "url": "https://api.github.com/repos/Faulo/slothsoft-schema/zipball/22cb40d723de17f0cbcc4f7986b7b791cbc3de7e",
+                "reference": "22cb40d723de17f0cbcc4f7986b7b791cbc3de7e",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.2",
+                "php": "7.2 - 7.4",
                 "slothsoft/core": "^1.0",
-                "slothsoft/farah": "^1.0"
+                "slothsoft/farah": "^1.4"
             },
             "require-dev": {
-                "phpunit/phpunit": "^6.5"
+                "phpunit/phpunit": "8.5.*"
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-develop": "1.1.x-dev"
+                }
+            },
             "autoload": {
-                "psr-0": {
-                    "Slothsoft\\Schema\\": "src/"
+                "psr-4": {
+                    "Slothsoft\\Schema\\": "src"
                 },
                 "files": [
-                    "src/registerModule.php"
+                    "scripts/bootstrap.php"
                 ]
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -1621,9 +1626,9 @@
             ],
             "support": {
                 "issues": "https://github.com/Faulo/slothsoft-schema/issues",
-                "source": "https://github.com/Faulo/slothsoft-schema/tree/master"
+                "source": "https://github.com/Faulo/slothsoft-schema/tree/develop"
             },
-            "time": "2020-03-29T22:46:58+00:00"
+            "time": "2021-01-03T19:31:23+00:00"
         },
         {
             "name": "slothsoft/w3c",
@@ -3597,7 +3602,8 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "slothsoft/farah": 20
+        "slothsoft/farah": 20,
+        "slothsoft/schema": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
