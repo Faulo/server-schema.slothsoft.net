@@ -30,6 +30,7 @@
 							<page name="{@name}" title="{$url-version}" ref="pages/schema/documentation" status-active="" status-public="">
 								<sfm:param name="version" value="{@name}"/>
 							</page>
+							<page name="{@name}.xsd" title="{$url-version}" ref="{@url}" status-active=""/>
 						</xsl:for-each>
 					</page>
 				</xsl:for-each>
