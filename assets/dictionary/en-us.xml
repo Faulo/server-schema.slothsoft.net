@@ -4,29 +4,31 @@
 	<p key="header/1">This document describes the namespace </p>
 	<p key="header/2">, conventionally prefixed as </p>
 	<p key="header/3">.</p>
-	
+
 	<p key="home/table/caption">The following specifications define this namespace:</p>
 	<p key="home/table/version">Version</p>
 	<p key="home/table/revision">Revision</p>
 	<p key="home/table/documentation">Documentation</p>
 	<p key="home/table/download">Download</p>
-	
+
 	<p key="footer/copyright">© 2017-2020 </p>
-	<p key="footer/company"><a href="http://slothsoft.net" target="_blank" rel="external">Slothsoft</a></p>
-	
+	<p key="footer/company">
+		<a href="http://slothsoft.net" target="_blank" rel="external">Slothsoft</a>
+	</p>
+
 	<p key="doc/toc">Table of contents</p>
 	<p key="doc/elements-in-namespace">Elements in namespace </p>
 	<p key="doc/attributes-in-namespace">Attributes in namespace </p>
 	<p key="doc/categories-in-namespace">Categories in namespace </p>
 	<p key="doc/groups-in-namespace">Groups in namespace </p>
 	<p key="doc/content-models-in-namespace">Content models in namespace </p>
-	
+
 	<p key="doc/the-element">The element </p>
 	<p key="doc/the-attribute">The attribute </p>
 	<p key="doc/the-category">The category </p>
 	<p key="doc/the-group">The group </p>
 	<p key="doc/the-content-model">The content model </p>
-	
+
 	<p key="doc/category">Category:</p>
 	<p key="doc/content-model">Content model:</p>
 	<p key="doc/content-model-ancestors">This content model extends:</p>
@@ -35,21 +37,21 @@
 	<p key="doc/element-parents">Context in which this element may appear:</p>
 	<p key="doc/attribute-children">Possible attributes:</p>
 	<p key="doc/attribute-parents">Elements which use this attribute:</p>
-	
+
 	<p key="doc/is-root">document root</p>
 	<p key="doc/required">Required:</p>
 	<p key="doc/required/true">Yes</p>
 	<p key="doc/required/false">No</p>
 	<p key="doc/value-patterns">Allowed content:</p>
-	<p key="doc/value-tokens">Allowed content:</p>	
-	
+	<p key="doc/value-tokens">Allowed content:</p>
+
 	<p key="doc/elements-in-category">Elements in this category:</p>
 	<p key="doc/attributes-in-category">Attributes in this category:</p>
 	<p key="doc/elements-in-group">Elements in this group:</p>
 	<p key="doc/attributes-in-group">Attributes in this group:</p>
 	<p key="doc/elements-in-content-model">Elements which use this content model:</p>
 	<p key="doc/attributes-in-content-model">Attributes which use this content model:</p>
-	
+
 	<p key="home/changelog">Changelog of most recent release:</p>
 	<p key="doc/changelog">Changelog</p>
 </html>

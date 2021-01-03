@@ -79,9 +79,11 @@ code {
 .element {
 	background: rgba(127, 127, 255, 0.1);
 }
+
 code.element::before {
 	content: "<";
 }
+
 code.element::after {
 	content: ">";
 }
@@ -97,6 +99,7 @@ code.element::after {
 .type {
 	background: rgba(127, 255, 127, 0.1);
 }
+
 code.type {
 	font-weight: bold;
 }
@@ -104,6 +107,7 @@ code.type {
 .category {
 	background: rgba(127, 255, 127, 0.1);
 }
+
 code.group {
 	font-style: italic;
 }
@@ -111,6 +115,7 @@ code.group {
 .group {
 	background: rgba(127, 255, 127, 0.1);
 }
+
 code.group {
 	font-style: italic;
 }
