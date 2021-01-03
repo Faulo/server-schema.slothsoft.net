@@ -17,7 +17,7 @@
 	"require" : {
 		"php" : "7.2 - 8.0",
 		"slothsoft/core" : "^1.2",
-		"slothsoft/farah" : "^1.2",
+		"slothsoft/farah" : "1.3.x-dev",
 		"slothsoft/amber" : "*",
 		"slothsoft/cron" : "*",
 		"slothsoft/savegame" : "*",

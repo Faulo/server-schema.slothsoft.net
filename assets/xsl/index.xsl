@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet version="1.0"
-	xmlns="http://www.w3.org/1999/xhtml"
-	xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-	xmlns:sfs="http://schema.slothsoft.net/farah/sitemap"
-	xmlns:sfm="http://schema.slothsoft.net/farah/module"
-	xmlns:ssv="http://schema.slothsoft.net/schema/versioning">
-	
+<xsl:stylesheet version="1.0" xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:sfs="http://schema.slothsoft.net/farah/sitemap"
+	xmlns:sfm="http://schema.slothsoft.net/farah/module" xmlns:ssv="http://schema.slothsoft.net/schema/versioning">
+
 	<xsl:template match="/*">
 		<html>
 			<head>
@@ -22,7 +19,11 @@
 					<ul>
 						<xsl:for-each select="*[@name='sites']/*/*/*">
 							<li>
-								<a href="{@uri}"><code class="namespace"><xsl:value-of select="@title"/></code></a>
+								<a href="{@uri}">
+									<code class="namespace">
+										<xsl:value-of select="@title" />
+									</code>
+								</a>
 							</li>
 						</xsl:for-each>
 					</ul>
