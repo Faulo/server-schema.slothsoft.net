@@ -1,5 +1,6 @@
 <?php
 declare(strict_types = 1);
+namespace Slothsoft\Server\Schema;
 
 use Slothsoft\Farah\FarahUrl\FarahUrlAuthority;
 use Slothsoft\Farah\ModuleTests\AbstractModuleTest;

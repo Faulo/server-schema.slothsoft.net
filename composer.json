@@ -1,45 +1,43 @@
 {
-    "name": "slothsoft/schema.slothsoft.net",
-    "type": "project",
-    "description": "schema.slothsoft.net",
-    "license": "WTFPL",
-    "keywords": [
-        "slothsoft",
-        "farah-module",
-        "farah-server"
-    ],
-    "autoload": {
-        "files": [
-            "config.php",
-            "src/registerModule.php"
-        ]
-    },
-    "require": {
-        "php": "^7.2",
-        "slothsoft/amber": "*",
-        "slothsoft/core": "*",
-        "slothsoft/cron": "*",
-        "slothsoft/farah": "*",
-        "slothsoft/savegame": "*",
-        "slothsoft/schema": "*"
-    },
-    "require-dev": {
-        "phpunit/phpunit": "^6.5"
-    },
-    "autoload-dev": {
-        "classmap": [
-            "tests/"
-        ]
-    },
-    "classmap-authoritative": true,
-    "scripts": {
-        "post-autoload-dump": "Slothsoft\\Core\\ServerEnvironment::cleanCacheDirectory"
-    },
-    "authors": [
-        {
-            "name": "Daniel Schulz",
-            "email": "info.slothsoft@gmail.com"
-        }
-    ],
-    "homepage": "http://schema.slothsoft.net"
+	"name" : "slothsoft/schema.slothsoft.net",
+	"type" : "project",
+	"description" : "schema.slothsoft.net",
+	"license" : "WTFPL",
+	"keywords" : [
+		"slothsoft",
+		"farah-module",
+		"farah-server"
+	],
+	"autoload" : {
+		"files" : [
+			"config.php",
+			"scripts/bootstrap.php"
+		]
+	},
+	"require" : {
+		"php" : "7.2 - 8.0",
+		"slothsoft/core" : "^1.2",
+		"slothsoft/farah" : "^1.2",
+		"slothsoft/amber" : "*",
+		"slothsoft/cron" : "*",
+		"slothsoft/savegame" : "*",
+		"slothsoft/schema" : "*"
+	},
+	"require-dev" : {
+		"phpunit/phpunit" : "8.5.*"
+	},
+	"autoload-dev" : {
+		"psr-4" : {
+			"Slothsoft\\Server\\Schema\\" : "tests"
+		}
+	},
+	"scripts" : {
+		"post-autoload-dump" : "Slothsoft\\Core\\ServerEnvironment::cleanCacheDirectory"
+	},
+	"homepage" : "http://schema.slothsoft.net",
+	"authors" : [{
+			"name" : "Daniel Schulz",
+			"email" : "info.slothsoft@gmail.com"
+		}
+	]
 }

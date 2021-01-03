@@ -1,5 +1,6 @@
 <?php
 declare(strict_types = 1);
+namespace Slothsoft\Server\Schema;
 
 use Slothsoft\Farah\Configuration\AssetConfigurationField;
 use Slothsoft\Farah\ModuleTests\AbstractSitemapTest;
