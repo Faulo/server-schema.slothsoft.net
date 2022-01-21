@@ -24,7 +24,7 @@ jobs:
         uses: php-actions/composer@v6
         with:
           php_version: ${{ matrix.php }}
-          php_extensions: xsl sockets
+          php_extensions: xsl
           command: update
           args: --prefer-lowest --prefer-stable
 
@@ -32,7 +32,7 @@ jobs:
         uses: php-actions/phpunit@v3
         with:
           php_version: ${{ matrix.php }}
-          php_extensions: xsl sockets
+          php_extensions: xsl
           version: 8
           bootstrap: vendor/autoload.php
           configuration: phpunit.xml
