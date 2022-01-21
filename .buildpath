@@ -241,6 +241,11 @@
 			<attribute name="composer" value="vendor"/>
 		</attributes>
 	</buildpathentry>
+	<buildpathentry kind="src" path="vendor/slothsoft/amber/scripts">
+		<attributes>
+			<attribute name="composer" value="vendor"/>
+		</attributes>
+	</buildpathentry>
 	<buildpathentry kind="src" path="vendor/slothsoft/amber/src">
 		<attributes>
 			<attribute name="composer" value="vendor"/>
@@ -266,6 +271,11 @@
 			<attribute name="composer" value="vendor"/>
 		</attributes>
 	</buildpathentry>
+	<buildpathentry kind="src" path="vendor/slothsoft/cron/scripts">
+		<attributes>
+			<attribute name="composer" value="vendor"/>
+		</attributes>
+	</buildpathentry>
 	<buildpathentry kind="src" path="vendor/slothsoft/cron/src">
 		<attributes>
 			<attribute name="composer" value="vendor"/>
@@ -277,6 +287,11 @@
 		</attributes>
 	</buildpathentry>
 	<buildpathentry kind="src" path="vendor/slothsoft/farah/src">
+		<attributes>
+			<attribute name="composer" value="vendor"/>
+		</attributes>
+	</buildpathentry>
+	<buildpathentry kind="src" path="vendor/slothsoft/savegame/scripts">
 		<attributes>
 			<attribute name="composer" value="vendor"/>
 		</attributes>

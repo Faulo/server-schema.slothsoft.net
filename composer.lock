@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1c94d35f2a8352d7cb62f1eb8737b41a",
+    "content-hash": "fc15bc2c6cf475c59a7ca8d1d1344929",
     "packages": [
         {
             "name": "container-interop/container-interop",
@@ -1182,37 +1182,42 @@
         },
         {
             "name": "slothsoft/amber",
-            "version": "1.0.0",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Faulo/slothsoft-amber.git",
-                "reference": "56a31186364f33e1a398504af5c60e2727db57c3"
+                "reference": "8f062ad1fc0ec32a807e614004a63cb92f873e5f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Faulo/slothsoft-amber/zipball/56a31186364f33e1a398504af5c60e2727db57c3",
-                "reference": "56a31186364f33e1a398504af5c60e2727db57c3",
+                "url": "https://api.github.com/repos/Faulo/slothsoft-amber/zipball/8f062ad1fc0ec32a807e614004a63cb92f873e5f",
+                "reference": "8f062ad1fc0ec32a807e614004a63cb92f873e5f",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.2",
-                "slothsoft/core": "^1.0",
-                "slothsoft/farah": "^1.0",
-                "slothsoft/savegame": "^1.0"
+                "php": "7.4 - 8.0",
+                "slothsoft/core": "^1.5.1",
+                "slothsoft/farah": "^1.6.1",
+                "slothsoft/savegame": "^1.0.2"
             },
             "require-dev": {
-                "phpunit/phpunit": "^6.5"
+                "phpunit/phpunit": "8.5.*"
             },
             "suggest": {
                 "ext-imagick": "Needed to extract images with ambgfx"
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-develop": "1.1.x-dev"
+                }
+            },
             "autoload": {
-                "psr-0": {
-                    "Slothsoft\\Amber\\": "src/"
+                "psr-4": {
+                    "Slothsoft\\Amber\\": "src"
                 },
                 "files": [
-                    "src/registerModule.php"
+                    "scripts/registerModule.php"
                 ]
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -1226,7 +1231,7 @@
                 }
             ],
             "description": "A Farah module for processing game files from the amber engine (i.e., Ambermoon and Amberstar).",
-            "homepage": "http://farah.slothsoft.net/",
+            "homepage": "http://farah.slothsoft.net/modules/amber",
             "keywords": [
                 "docs",
                 "farah-module",
@@ -1234,9 +1239,9 @@
             ],
             "support": {
                 "issues": "https://github.com/Faulo/slothsoft-amber/issues",
-                "source": "https://github.com/Faulo/slothsoft-amber/tree/master"
+                "source": "https://github.com/Faulo/slothsoft-amber/tree/1.1.0"
             },
-            "time": "2018-08-10T13:45:07+00:00"
+            "time": "2022-01-21T20:27:31+00:00"
         },
         {
             "name": "slothsoft/blob",
@@ -1298,16 +1303,16 @@
         },
         {
             "name": "slothsoft/core",
-            "version": "1.5.0",
+            "version": "1.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Faulo/slothsoft-core.git",
-                "reference": "96c6dc60f2767561e2aeb6de9927a0070a96f524"
+                "reference": "de99d5bc58da29c961f604ad4beb98a29e3251a8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Faulo/slothsoft-core/zipball/96c6dc60f2767561e2aeb6de9927a0070a96f524",
-                "reference": "96c6dc60f2767561e2aeb6de9927a0070a96f524",
+                "url": "https://api.github.com/repos/Faulo/slothsoft-core/zipball/de99d5bc58da29c961f604ad4beb98a29e3251a8",
+                "reference": "de99d5bc58da29c961f604ad4beb98a29e3251a8",
                 "shasum": ""
             },
             "require": {
@@ -1358,39 +1363,44 @@
             ],
             "support": {
                 "issues": "https://github.com/Faulo/slothsoft-core/issues",
-                "source": "https://github.com/Faulo/slothsoft-core/tree/1.5.0"
+                "source": "https://github.com/Faulo/slothsoft-core/tree/1.5.1"
             },
-            "time": "2022-01-18T17:09:40+00:00"
+            "time": "2022-01-21T19:55:43+00:00"
         },
         {
             "name": "slothsoft/cron",
-            "version": "1.0.0",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Faulo/slothsoft-cron.git",
-                "reference": "a1800508e0f5b74487a165923b1a641a5fb23752"
+                "reference": "4ff14640ca93b4be81861fa8178d5faea690bd51"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Faulo/slothsoft-cron/zipball/a1800508e0f5b74487a165923b1a641a5fb23752",
-                "reference": "a1800508e0f5b74487a165923b1a641a5fb23752",
+                "url": "https://api.github.com/repos/Faulo/slothsoft-cron/zipball/4ff14640ca93b4be81861fa8178d5faea690bd51",
+                "reference": "4ff14640ca93b4be81861fa8178d5faea690bd51",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.2",
-                "slothsoft/core": "^1.0",
-                "slothsoft/farah": "^1.0"
+                "php": "7.4 - 8.0",
+                "slothsoft/core": "^1.5",
+                "slothsoft/farah": "^1.6"
             },
             "require-dev": {
-                "phpunit/phpunit": "^6.5"
+                "phpunit/phpunit": "8.5.*"
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-develop": "1.0.x-dev"
+                }
+            },
             "autoload": {
-                "psr-0": {
-                    "Slothsoft\\Cron\\": "src/"
+                "psr-4": {
+                    "Slothsoft\\Cron\\": "src"
                 },
                 "files": [
-                    "src/registerModule.php"
+                    "scripts/registerModule.php"
                 ]
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -1404,6 +1414,7 @@
                 }
             ],
             "description": "A Farah module that handles cronjobs.",
+            "homepage": "http://farah.slothsoft.net/modules/cron",
             "keywords": [
                 "docs",
                 "farah-module",
@@ -1411,22 +1422,22 @@
             ],
             "support": {
                 "issues": "https://github.com/Faulo/slothsoft-cron/issues",
-                "source": "https://github.com/Faulo/slothsoft-cron/tree/master"
+                "source": "https://github.com/Faulo/slothsoft-cron/tree/1.0.1"
             },
-            "time": "2018-08-10T13:45:48+00:00"
+            "time": "2022-01-21T18:04:08+00:00"
         },
         {
             "name": "slothsoft/farah",
-            "version": "1.6.0",
+            "version": "1.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Faulo/slothsoft-farah.git",
-                "reference": "3e010aa100e7b1c18e025b102dfb405e8f6e45e9"
+                "reference": "ce1ba035235295b28a098fd63070baf30d1109d3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Faulo/slothsoft-farah/zipball/3e010aa100e7b1c18e025b102dfb405e8f6e45e9",
-                "reference": "3e010aa100e7b1c18e025b102dfb405e8f6e45e9",
+                "url": "https://api.github.com/repos/Faulo/slothsoft-farah/zipball/ce1ba035235295b28a098fd63070baf30d1109d3",
+                "reference": "ce1ba035235295b28a098fd63070baf30d1109d3",
                 "shasum": ""
             },
             "require": {
@@ -1488,32 +1499,32 @@
             ],
             "support": {
                 "issues": "https://github.com/Faulo/slothsoft-farah/issues",
-                "source": "https://github.com/Faulo/slothsoft-farah/tree/1.6.0"
+                "source": "https://github.com/Faulo/slothsoft-farah/tree/1.6.1"
             },
-            "time": "2022-01-21T17:19:51+00:00"
+            "time": "2022-01-21T20:00:26+00:00"
         },
         {
             "name": "slothsoft/savegame",
-            "version": "1.0.1",
+            "version": "1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Faulo/slothsoft-savegame.git",
-                "reference": "cd4cbd0e3acde0aa9077681fb2f84aadfcd508d8"
+                "reference": "0d6fa6deb1fc9e31b9cea4b8aa29768bf100f167"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Faulo/slothsoft-savegame/zipball/cd4cbd0e3acde0aa9077681fb2f84aadfcd508d8",
-                "reference": "cd4cbd0e3acde0aa9077681fb2f84aadfcd508d8",
+                "url": "https://api.github.com/repos/Faulo/slothsoft-savegame/zipball/0d6fa6deb1fc9e31b9cea4b8aa29768bf100f167",
+                "reference": "0d6fa6deb1fc9e31b9cea4b8aa29768bf100f167",
                 "shasum": ""
             },
             "require": {
-                "php": "7.2 - 8.0",
+                "php": "7.4 - 8.0",
                 "php-ds/php-ds": "^1.2",
                 "slothsoft/core": "^1.5",
-                "slothsoft/farah": "^1.5"
+                "slothsoft/farah": "^1.6"
             },
             "require-dev": {
-                "phpunit/phpunit": "^8.5"
+                "phpunit/phpunit": "8.5.*"
             },
             "suggest": {
                 "ext-ds": "*"
@@ -1526,10 +1537,10 @@
             },
             "autoload": {
                 "psr-4": {
-                    "Slothsoft\\Savegame\\": "src/"
+                    "Slothsoft\\Savegame\\": "src"
                 },
                 "files": [
-                    "src/registerModule.php"
+                    "scripts/registerModule.php"
                 ]
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -1551,28 +1562,28 @@
             ],
             "support": {
                 "issues": "https://github.com/Faulo/slothsoft-savegame/issues",
-                "source": "https://github.com/Faulo/slothsoft-savegame/tree/1.0.1"
+                "source": "https://github.com/Faulo/slothsoft-savegame/tree/1.0.2"
             },
-            "time": "2022-01-21T16:20:04+00:00"
+            "time": "2022-01-21T19:58:43+00:00"
         },
         {
             "name": "slothsoft/schema",
-            "version": "1.1.0",
+            "version": "1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Faulo/slothsoft-schema.git",
-                "reference": "0c1e0d2f69b70411f960db1705e1b80c9e496109"
+                "reference": "506b5f6e87fc9c33e765f4f27ef42ef899b5212f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Faulo/slothsoft-schema/zipball/0c1e0d2f69b70411f960db1705e1b80c9e496109",
-                "reference": "0c1e0d2f69b70411f960db1705e1b80c9e496109",
+                "url": "https://api.github.com/repos/Faulo/slothsoft-schema/zipball/506b5f6e87fc9c33e765f4f27ef42ef899b5212f",
+                "reference": "506b5f6e87fc9c33e765f4f27ef42ef899b5212f",
                 "shasum": ""
             },
             "require": {
-                "php": "7.2 - 7.4",
-                "slothsoft/core": "^1.0",
-                "slothsoft/farah": "^1.4"
+                "php": "7.4 - 8.0",
+                "slothsoft/core": "^1.5",
+                "slothsoft/farah": "^1.6"
             },
             "require-dev": {
                 "phpunit/phpunit": "8.5.*"
@@ -1610,9 +1621,9 @@
             ],
             "support": {
                 "issues": "https://github.com/Faulo/slothsoft-schema/issues",
-                "source": "https://github.com/Faulo/slothsoft-schema/tree/1.1.0"
+                "source": "https://github.com/Faulo/slothsoft-schema/tree/1.1.1"
             },
-            "time": "2021-01-03T19:45:31+00:00"
+            "time": "2022-01-21T17:34:24+00:00"
         },
         {
             "name": "slothsoft/w3c",
