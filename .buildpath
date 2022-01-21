@@ -76,11 +76,6 @@
 			<attribute name="composer" value="vendor"/>
 		</attributes>
 	</buildpathentry>
-	<buildpathentry kind="src" path="vendor/laminas/laminas-zendframework-bridge/src">
-		<attributes>
-			<attribute name="composer" value="vendor"/>
-		</attributes>
-	</buildpathentry>
 	<buildpathentry kind="src" path="vendor/matthiasmullie/minify/src">
 		<attributes>
 			<attribute name="composer" value="vendor"/>
