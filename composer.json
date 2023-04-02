@@ -2,7 +2,7 @@
 	"name" : "slothsoft/schema.slothsoft.net",
 	"type" : "project",
 	"description" : "schema.slothsoft.net",
-	"license" : "WTFPL",
+	"license" : "MIT",
 	"keywords" : [
 		"slothsoft",
 		"farah-module",
@@ -14,15 +14,15 @@
 			"scripts/bootstrap.php"
 		]
 	},
-	"config": {
-       "platform": {
-           "php": "7.4"
-       }
-    },
+	"config" : {
+		"platform" : {
+			"php" : "7.4"
+		}
+	},
 	"require" : {
 		"php" : "7.4 - 8.0",
-		"slothsoft/core" : "^1.5",
-		"slothsoft/farah" : "^1.6",
+		"slothsoft/core" : "^1.10",
+		"slothsoft/farah" : "^1.10",
 		"slothsoft/schema" : "^1.1",
 		"slothsoft/amber" : "^1.1",
 		"slothsoft/cron" : "^1.0",
@@ -33,11 +33,11 @@
 	},
 	"autoload-dev" : {
 		"psr-4" : {
-			"Slothsoft\\Server\\Schema\\" : "tests"
+			"Slothsoft\\Server\\Schema\\Tests\\" : "tests"
 		}
 	},
 	"scripts" : {
-		"post-autoload-dump" : "Slothsoft\\Core\\ServerEnvironment::cleanCacheDirectory"
+		"post-update-cmd" : "composer exec server-clean cache"
 	},
 	"homepage" : "http://schema.slothsoft.net",
 	"authors" : [{
