@@ -37,7 +37,9 @@
 		}
 	},
 	"scripts" : {
-		"post-update-cmd" : "composer exec server-clean cache"
+		"post-update-cmd" : "composer exec server-clean cache",
+		"farah-asset" : "@php vendor/slothsoft/farah/scripts/farah-asset.php",
+		"farah-page" : "@php vendor/slothsoft/farah/scripts/farah-page.php"
 	},
 	"homepage" : "http://schema.slothsoft.net",
 	"authors" : [{

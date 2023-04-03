@@ -1,4 +1,4 @@
 farahServerPipeline {
-    VHOST_NAME = 'cursedcreations.slothsoft.net'
+    VHOST_NAME = 'schema.slothsoft.net'
     PHP_VERSION = '7.4'
 }
