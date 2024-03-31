@@ -1,12 +1,8 @@
-<phpunit 
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/8.5/phpunit.xsd"			
-	colors="true"
-	convertErrorsToExceptions="true"
-	convertNoticesToExceptions="true"
-	convertWarningsToExceptions="true"
-	stopOnFailure="false">
-	<testsuite name="Unit Tests">
-		<directory>tests</directory>
-	</testsuite>
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/8.5/phpunit.xsd" colors="true" convertErrorsToExceptions="true"
+	convertNoticesToExceptions="true" convertWarningsToExceptions="true" stopOnFailure="false">
+	<testsuites>
+		<testsuite name="Unit Tests">
+			<directory>tests</directory>
+		</testsuite>
+	</testsuites>
 </phpunit>
