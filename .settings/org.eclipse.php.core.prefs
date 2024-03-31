@@ -1,4 +1,5 @@
 eclipse.preferences.version=1
+include_path=5;org.eclipse.dltk.USER_LIBRARY/Saxon\u00055;org.eclipse.dltk.USER_LIBRARY/DS\u00055;org.eclipse.dltk.USER_LIBRARY/pthreads\u00055;org.eclipse.dltk.USER_LIBRARY/COM
 phpVersion=php7.4
 useShortTags=false
 use_asp_tags_as_php=false
