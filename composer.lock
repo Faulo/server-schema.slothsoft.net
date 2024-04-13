@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "249f7a194de159908923af9058360e0b",
+    "content-hash": "d4b3e5f75ba9e88cec5f79483d38359e",
     "packages": [
         {
             "name": "guzzlehttp/psr7",
@@ -1256,16 +1256,16 @@
         },
         {
             "name": "slothsoft/core",
-            "version": "1.11.2",
+            "version": "1.11.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Faulo/slothsoft-core.git",
-                "reference": "16624e8ef515fe3f8312ce8976a690e341310f2c"
+                "reference": "0df253da7d27bbcbded2ae008fca68da56b3348a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Faulo/slothsoft-core/zipball/16624e8ef515fe3f8312ce8976a690e341310f2c",
-                "reference": "16624e8ef515fe3f8312ce8976a690e341310f2c",
+                "url": "https://api.github.com/repos/Faulo/slothsoft-core/zipball/0df253da7d27bbcbded2ae008fca68da56b3348a",
+                "reference": "0df253da7d27bbcbded2ae008fca68da56b3348a",
                 "shasum": ""
             },
             "require": {
@@ -1319,9 +1319,9 @@
             ],
             "support": {
                 "issues": "https://github.com/Faulo/slothsoft-core/issues",
-                "source": "https://github.com/Faulo/slothsoft-core/tree/1.11.2"
+                "source": "https://github.com/Faulo/slothsoft-core/tree/1.11.4"
             },
-            "time": "2024-03-31T23:16:08+00:00"
+            "time": "2024-04-12T15:07:46+00:00"
         },
         {
             "name": "slothsoft/cron",
@@ -3205,7 +3205,7 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": "7.4 - 8.0"
+        "php": "^7.4"
     },
     "platform-dev": [],
     "platform-overrides": {
