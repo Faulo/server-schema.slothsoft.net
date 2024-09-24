@@ -14,7 +14,6 @@
 		]
 	},
 	"require" : {
-		"php" : ">=8.0",
 		"slothsoft/core" : "^1.11",
 		"slothsoft/farah" : "^1.11",
 		"slothsoft/schema" : "^1.1",
