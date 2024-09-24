@@ -1,0 +1,22 @@
+services:
+    schema:
+        image: faulo/farah:$PHP_VERSION
+        volumes:
+            - ./assets:/var/www/assets
+            - ./scripts:/var/www/scripts
+            - ./composer.json:/var/www/composer.json
+            - ./composer.lock:/var/www/composer.lock
+            - ./html/google0e2ae129a89d6e6f.html:/var/www/html/google0e2ae129a89d6e6f.html
+            - ./html/robots.txt:/var/www/html/robots.txt
+        deploy:
+            mode: global
+            restart_policy:
+                condition: on-failure
+                delay: 5s
+                max_attempts: 3
+                window: 120s
+        networks:
+            - vhosts_default
+networks:
+    vhosts_default:
+        external: true

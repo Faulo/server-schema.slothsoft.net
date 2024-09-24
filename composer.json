@@ -1,52 +1,43 @@
 {
-	"name": "slothsoft/schema.slothsoft.net",
-	"type": "project",
-	"description": "schema.slothsoft.net",
-	"license": "MIT",
-	"keywords": [
+	"name" : "slothsoft/schema.slothsoft.net",
+	"type" : "project",
+	"description" : "schema.slothsoft.net",
+	"license" : "MIT",
+	"keywords" : [
 		"slothsoft",
 		"farah-module",
 		"farah-server"
 	],
-	"autoload": {
-		"files": [
-			"config.php",
+	"autoload" : {
+		"files" : [
 			"scripts/bootstrap.php"
 		]
 	},
-	"config": {
-		"platform": {
-			"php": "7.4"
+	"require" : {
+		"php" : ">=8.0",
+		"slothsoft/core" : "^1.11",
+		"slothsoft/farah" : "^1.11",
+		"slothsoft/schema" : "^1.1",
+		"slothsoft/amber" : "^1.1",
+		"slothsoft/cron" : "^1.0",
+		"slothsoft/savegame" : "^1.0"
+	},
+	"require-dev" : {
+		"phpunit/phpunit" : "8.5.*"
+	},
+	"autoload-dev" : {
+		"psr-4" : {
+			"Slothsoft\\Server\\Schema\\Tests\\" : "tests"
 		}
 	},
-	"require": {
-		"php": "^7.4",
-		"slothsoft/core": "^1.11",
-		"slothsoft/farah": "^1.11",
-		"slothsoft/schema": "^1.1",
-		"slothsoft/amber": "^1.1",
-		"slothsoft/cron": "^1.0",
-		"slothsoft/savegame": "^1.0"
+	"scripts" : {
+		"farah-asset" : "@php vendor/slothsoft/farah/scripts/farah-asset.php",
+		"farah-page" : "@php vendor/slothsoft/farah/scripts/farah-page.php"
 	},
-	"require-dev": {
-		"phpunit/phpunit": "8.5.*"
-	},
-	"autoload-dev": {
-		"psr-4": {
-			"Slothsoft\\Server\\Schema\\Tests\\": "tests"
+	"homepage" : "http://schema.slothsoft.net",
+	"authors" : [{
+			"name" : "Daniel Schulz",
+			"email" : "info.slothsoft@gmail.com"
 		}
-	},
-	"scripts": {
-		"post-autoload-dump": "composer exec server-clean cache",
-		"farah-asset": "@php vendor/slothsoft/farah/scripts/farah-asset.php",
-		"farah-page": "@php vendor/slothsoft/farah/scripts/farah-page.php"
-	},
-	"homepage": "http://schema.slothsoft.net",
-	"authors": [
-		{
-			"name": "Daniel Schulz",
-			"email": "info.slothsoft@gmail.com"
-		}
-	],
-	"classmap-authoritative": true
+	]
 }
