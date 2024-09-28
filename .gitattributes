@@ -1,0 +1,3 @@
+composer.json eol=lf
+composer.lock eol=lf
+.env eol=lf
