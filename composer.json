@@ -11,7 +11,10 @@
 	"autoload" : {
 		"files" : [
 			"src/bootstrap.php"
-		]
+		],
+		"psr-4" : {
+			"Slothsoft\\Server\\Schema\\" : "src"
+		}
 	},
 	"require" : {
 		"slothsoft/core" : "^1.11",
