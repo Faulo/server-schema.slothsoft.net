@@ -11,12 +11,6 @@ services:
               bind:
                   create_host_path: true
             - type: bind
-              source: ./scripts
-              target: /var/www/scripts
-              read_only: true
-              bind:
-                  create_host_path: true
-            - type: bind
               source: ./src
               target: /var/www/src
               read_only: true
