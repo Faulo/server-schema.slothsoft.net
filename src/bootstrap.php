@@ -7,10 +7,10 @@ use Slothsoft\Farah\Dictionary;
 use Slothsoft\Farah\Kernel;
 use Slothsoft\Farah\Module\Module;
 
-@include __DIR__ . '/../../global/slothsoft.core.php';
-@include __DIR__ . '/../../global/slothsoft.core.xslt.php';
-@include __DIR__ . '/../../global/slothsoft.core.dbms.php';
-@include __DIR__ . '/../../global/slothsoft.farah.php';
+// @include __DIR__ . '/../../global/slothsoft.core.php';
+// @include __DIR__ . '/../../global/slothsoft.core.xslt.php';
+// @include __DIR__ . '/../../global/slothsoft.core.dbms.php';
+// @include __DIR__ . '/../../global/slothsoft.farah.php';
 
 $root = dirname(__DIR__);
 
