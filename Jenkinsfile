@@ -1,6 +1,6 @@
 pipeline {
 	agent {
-		label 'jenkins && docker'
+		label 'backend'
 	}
 	stages {
 		stage('Load environment') {
