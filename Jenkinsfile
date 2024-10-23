@@ -1,6 +1,6 @@
 pipeline {
 	agent {
-		label 'backend'
+		label 'backend && mörkö'
 	}
 	stages {
 		stage('Load environment') {
