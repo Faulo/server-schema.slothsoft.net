@@ -8,38 +8,44 @@
     "packages": [
         {
             "name": "guzzlehttp/psr7",
-            "version": "1.9.1",
+            "version": "2.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/psr7.git",
-                "reference": "e4490cabc77465aaee90b20cfc9a770f8c04be6b"
+                "reference": "a70f5c95fb43bc83f07c9c948baa0dc1829bf201"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/psr7/zipball/e4490cabc77465aaee90b20cfc9a770f8c04be6b",
-                "reference": "e4490cabc77465aaee90b20cfc9a770f8c04be6b",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/a70f5c95fb43bc83f07c9c948baa0dc1829bf201",
+                "reference": "a70f5c95fb43bc83f07c9c948baa0dc1829bf201",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.4.0",
-                "psr/http-message": "~1.0",
-                "ralouphie/getallheaders": "^2.0.5 || ^3.0.0"
+                "php": "^7.2.5 || ^8.0",
+                "psr/http-factory": "^1.0",
+                "psr/http-message": "^1.1 || ^2.0",
+                "ralouphie/getallheaders": "^3.0"
             },
             "provide": {
+                "psr/http-factory-implementation": "1.0",
                 "psr/http-message-implementation": "1.0"
             },
             "require-dev": {
-                "ext-zlib": "*",
-                "phpunit/phpunit": "~4.8.36 || ^5.7.27 || ^6.5.14 || ^7.5.20 || ^8.5.8 || ^9.3.10"
+                "bamarni/composer-bin-plugin": "^1.8.2",
+                "http-interop/http-factory-tests": "0.9.0",
+                "phpunit/phpunit": "^8.5.39 || ^9.6.20"
             },
             "suggest": {
                 "laminas/laminas-httphandlerrunner": "Emit PSR-7 responses"
             },
             "type": "library",
+            "extra": {
+                "bamarni-bin": {
+                    "bin-links": true,
+                    "forward-command": false
+                }
+            },
             "autoload": {
-                "files": [
-                    "src/functions_include.php"
-                ],
                 "psr-4": {
                     "GuzzleHttp\\Psr7\\": "src/"
                 }
@@ -78,6 +84,11 @@
                     "name": "Tobias Schultze",
                     "email": "webmaster@tubo-world.de",
                     "homepage": "https://github.com/Tobion"
+                },
+                {
+                    "name": "Márk Sági-Kazár",
+                    "email": "mark.sagikazar@gmail.com",
+                    "homepage": "https://sagikazarmark.hu"
                 }
             ],
             "description": "PSR-7 message implementation that also provides common utility methods",
@@ -93,7 +104,7 @@
             ],
             "support": {
                 "issues": "https://github.com/guzzle/psr7/issues",
-                "source": "https://github.com/guzzle/psr7/tree/1.9.1"
+                "source": "https://github.com/guzzle/psr7/tree/2.7.0"
             },
             "funding": [
                 {
@@ -109,57 +120,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-04-17T16:00:37+00:00"
-        },
-        {
-            "name": "krakjoe/pthreads-polyfill",
-            "version": "v1.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/krakjoe/pthreads-polyfill.git",
-                "reference": "e0b6b34aca142dda943bf8ade046285fd2000c35"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/krakjoe/pthreads-polyfill/zipball/e0b6b34aca142dda943bf8ade046285fd2000c35",
-                "reference": "e0b6b34aca142dda943bf8ade046285fd2000c35",
-                "shasum": ""
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^5"
-            },
-            "type": "library",
-            "autoload": {
-                "files": [
-                    "src/Collectable.php",
-                    "src/Threaded.php",
-                    "src/Volatile.php",
-                    "src/Thread.php",
-                    "src/Worker.php",
-                    "src/Pool.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "PHP"
-            ],
-            "authors": [
-                {
-                    "name": "Joe Watkins",
-                    "email": "krakjoe@php.net"
-                }
-            ],
-            "description": "A polyfill for pthreads",
-            "homepage": "http://pthreads.org/",
-            "keywords": [
-                "polyfill",
-                "pthreads"
-            ],
-            "support": {
-                "issues": "https://github.com/krakjoe/pthreads-polyfill/issues",
-                "source": "https://github.com/krakjoe/pthreads-polyfill/tree/master"
-            },
-            "time": "2015-11-16T08:24:31+00:00"
+            "time": "2024-07-18T11:15:46+00:00"
         },
         {
             "name": "laminas/laminas-escaper",
@@ -290,20 +251,20 @@
         },
         {
             "name": "laminas/laminas-loader",
-            "version": "2.10.0",
+            "version": "2.11.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laminas/laminas-loader.git",
-                "reference": "e6fe952304ef40ce45cd814751ab35d42afdad12"
+                "reference": "f2eedd3a6e774d965158fd11946bb1eba72e298c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laminas/laminas-loader/zipball/e6fe952304ef40ce45cd814751ab35d42afdad12",
-                "reference": "e6fe952304ef40ce45cd814751ab35d42afdad12",
+                "url": "https://api.github.com/repos/laminas/laminas-loader/zipball/f2eedd3a6e774d965158fd11946bb1eba72e298c",
+                "reference": "f2eedd3a6e774d965158fd11946bb1eba72e298c",
                 "shasum": ""
             },
             "require": {
-                "php": "~8.0.0 || ~8.1.0 || ~8.2.0 || ~8.3.0"
+                "php": "~8.0.0 || ~8.1.0 || ~8.2.0 || ~8.3.0 || ~8.4.0"
             },
             "conflict": {
                 "zendframework/zend-loader": "*"
@@ -342,7 +303,7 @@
                     "type": "community_bridge"
                 }
             ],
-            "time": "2023-10-18T09:58:51+00:00"
+            "time": "2024-10-16T09:06:57+00:00"
         },
         {
             "name": "laminas/laminas-router",
@@ -984,6 +945,61 @@
             "time": "2021-11-05T16:50:12+00:00"
         },
         {
+            "name": "psr/http-factory",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/http-factory.git",
+                "reference": "2b4765fddfe3b508ac62f829e852b1501d3f6e8a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/http-factory/zipball/2b4765fddfe3b508ac62f829e852b1501d3f6e8a",
+                "reference": "2b4765fddfe3b508ac62f829e852b1501d3f6e8a",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1",
+                "psr/http-message": "^1.0 || ^2.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Http\\Message\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "https://www.php-fig.org/"
+                }
+            ],
+            "description": "PSR-17: Common interfaces for PSR-7 HTTP message factories",
+            "keywords": [
+                "factory",
+                "http",
+                "message",
+                "psr",
+                "psr-17",
+                "psr-7",
+                "request",
+                "response"
+            ],
+            "support": {
+                "source": "https://github.com/php-fig/http-factory"
+            },
+            "time": "2024-04-15T12:06:14+00:00"
+        },
+        {
             "name": "psr/http-message",
             "version": "1.1",
             "source": {
@@ -1253,26 +1269,26 @@
         },
         {
             "name": "slothsoft/core",
-            "version": "1.11.7",
+            "version": "1.11.16",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Faulo/slothsoft-core.git",
-                "reference": "f4a23f161817ae1a3a01f2222a987c55caade553"
+                "reference": "9f5606382ebf3254dfb650d544c770600e2cd592"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Faulo/slothsoft-core/zipball/f4a23f161817ae1a3a01f2222a987c55caade553",
-                "reference": "f4a23f161817ae1a3a01f2222a987c55caade553",
+                "url": "https://api.github.com/repos/Faulo/slothsoft-core/zipball/9f5606382ebf3254dfb650d544c770600e2cd592",
+                "reference": "9f5606382ebf3254dfb650d544c770600e2cd592",
                 "shasum": ""
             },
             "require": {
                 "ext-xsl": "*",
-                "guzzlehttp/psr7": "^1.4",
+                "guzzlehttp/psr7": "^2.7",
                 "php": ">=7.4",
                 "php-ds/php-ds": "^1.2",
                 "psr/http-message": "^1.0",
                 "slothsoft/w3c": "^1.1",
-                "symfony/process": "^5.0"
+                "symfony/process": "^5.4.45"
             },
             "require-dev": {
                 "phpunit/phpunit": "8.5.*"
@@ -1316,9 +1332,9 @@
             ],
             "support": {
                 "issues": "https://github.com/Faulo/slothsoft-core/issues",
-                "source": "https://github.com/Faulo/slothsoft-core/tree/1.11.7"
+                "source": "https://github.com/Faulo/slothsoft-core/tree/1.11.16"
             },
-            "time": "2024-10-05T20:49:28+00:00"
+            "time": "2024-10-30T10:49:16+00:00"
         },
         {
             "name": "slothsoft/cron",
@@ -1381,21 +1397,20 @@
         },
         {
             "name": "slothsoft/farah",
-            "version": "1.12.3",
+            "version": "1.12.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Faulo/slothsoft-farah.git",
-                "reference": "0e081e09b5cfa0fdffe010c67f561656e5334291"
+                "reference": "b31a4f15ebec2f85777462b0bf41c89eb8d1b90a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Faulo/slothsoft-farah/zipball/0e081e09b5cfa0fdffe010c67f561656e5334291",
-                "reference": "0e081e09b5cfa0fdffe010c67f561656e5334291",
+                "url": "https://api.github.com/repos/Faulo/slothsoft-farah/zipball/b31a4f15ebec2f85777462b0bf41c89eb8d1b90a",
+                "reference": "b31a4f15ebec2f85777462b0bf41c89eb8d1b90a",
                 "shasum": ""
             },
             "require": {
-                "guzzlehttp/psr7": "^1.8.4",
-                "krakjoe/pthreads-polyfill": "^1.1",
+                "guzzlehttp/psr7": "^2.7",
                 "laminas/laminas-router": "^3.5",
                 "matthiasmullie/minify": "^1.3",
                 "php": ">=7.4",
@@ -1405,7 +1420,7 @@
                 "psr/http-message": "^1.0",
                 "psr/log": "^1.0",
                 "slothsoft/blob": "^1.0",
-                "slothsoft/core": "^1.6"
+                "slothsoft/core": "^1.11.16"
             },
             "require-dev": {
                 "phpunit/phpunit": "8.5.*"
@@ -1413,7 +1428,8 @@
             "suggest": {
                 "ext-ds": "*",
                 "ext-pthreads": "*",
-                "ext-sockets": "*"
+                "ext-sockets": "*",
+                "krakjoe/pthreads-polyfill": "^1.1"
             },
             "bin": [
                 "scripts/farah-asset",
@@ -1452,9 +1468,9 @@
             ],
             "support": {
                 "issues": "https://github.com/Faulo/slothsoft-farah/issues",
-                "source": "https://github.com/Faulo/slothsoft-farah/tree/1.12.3"
+                "source": "https://github.com/Faulo/slothsoft-farah/tree/1.12.5"
             },
-            "time": "2024-10-05T20:50:00+00:00"
+            "time": "2024-10-30T11:48:05+00:00"
         },
         {
             "name": "slothsoft/savegame",
@@ -1713,16 +1729,16 @@
         },
         {
             "name": "symfony/process",
-            "version": "v5.4.44",
+            "version": "v5.4.45",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/process.git",
-                "reference": "1b9fa82b5c62cd49da8c9e3952dd8531ada65096"
+                "reference": "95f3f19d0f8f06e4253c66a0828ddb69f8b8ede4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/process/zipball/1b9fa82b5c62cd49da8c9e3952dd8531ada65096",
-                "reference": "1b9fa82b5c62cd49da8c9e3952dd8531ada65096",
+                "url": "https://api.github.com/repos/symfony/process/zipball/95f3f19d0f8f06e4253c66a0828ddb69f8b8ede4",
+                "reference": "95f3f19d0f8f06e4253c66a0828ddb69f8b8ede4",
                 "shasum": ""
             },
             "require": {
@@ -1755,7 +1771,7 @@
             "description": "Executes commands in sub-processes",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/process/tree/v5.4.44"
+                "source": "https://github.com/symfony/process/tree/v5.4.45"
             },
             "funding": [
                 {
@@ -1771,7 +1787,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-09-17T12:46:43+00:00"
+            "time": "2024-09-25T14:11:13+00:00"
         }
     ],
     "packages-dev": [
