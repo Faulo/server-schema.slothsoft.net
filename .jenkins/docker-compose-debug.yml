@@ -1,0 +1,12 @@
+services:
+    frontend:
+        image: faulo/farah:${PHP_VERSION}
+        volumes:
+            - ../assets:${DOCKER_WORKDIR}/assets
+            - ../src:${DOCKER_WORKDIR}/src
+            - ../html:${DOCKER_WORKDIR}/html
+            - ../composer.json:${DOCKER_WORKDIR}/composer.json
+            - ../composer.lock:${DOCKER_WORKDIR}/composer.lock
+            - ../data:${DOCKER_WORKDIR}/data
+        ports:
+            - 8080:80
