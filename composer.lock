@@ -251,16 +251,16 @@
         },
         {
             "name": "laminas/laminas-loader",
-            "version": "2.11.0",
+            "version": "2.11.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laminas/laminas-loader.git",
-                "reference": "f2eedd3a6e774d965158fd11946bb1eba72e298c"
+                "reference": "c507d5eccb969f7208434e3980680a1f6c0b1d8d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laminas/laminas-loader/zipball/f2eedd3a6e774d965158fd11946bb1eba72e298c",
-                "reference": "f2eedd3a6e774d965158fd11946bb1eba72e298c",
+                "url": "https://api.github.com/repos/laminas/laminas-loader/zipball/c507d5eccb969f7208434e3980680a1f6c0b1d8d",
+                "reference": "c507d5eccb969f7208434e3980680a1f6c0b1d8d",
                 "shasum": ""
             },
             "require": {
@@ -303,7 +303,8 @@
                     "type": "community_bridge"
                 }
             ],
-            "time": "2024-10-16T09:06:57+00:00"
+            "abandoned": true,
+            "time": "2024-12-05T14:43:32+00:00"
         },
         {
             "name": "laminas/laminas-router",
@@ -1148,16 +1149,16 @@
         },
         {
             "name": "slothsoft/amber",
-            "version": "1.1.6",
+            "version": "1.1.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Faulo/slothsoft-amber.git",
-                "reference": "8e317381546f17aba6094b0b3e5c7d71da22d598"
+                "reference": "cdd48c1047e62f51c253a48bc7764cd3440ae005"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Faulo/slothsoft-amber/zipball/8e317381546f17aba6094b0b3e5c7d71da22d598",
-                "reference": "8e317381546f17aba6094b0b3e5c7d71da22d598",
+                "url": "https://api.github.com/repos/Faulo/slothsoft-amber/zipball/cdd48c1047e62f51c253a48bc7764cd3440ae005",
+                "reference": "cdd48c1047e62f51c253a48bc7764cd3440ae005",
                 "shasum": ""
             },
             "require": {
@@ -1205,9 +1206,9 @@
             ],
             "support": {
                 "issues": "https://github.com/Faulo/slothsoft-amber/issues",
-                "source": "https://github.com/Faulo/slothsoft-amber/tree/1.1.6"
+                "source": "https://github.com/Faulo/slothsoft-amber/tree/1.1.8"
             },
-            "time": "2024-10-05T20:48:50+00:00"
+            "time": "2024-11-10T23:54:26+00:00"
         },
         {
             "name": "slothsoft/blob",
@@ -1269,16 +1270,16 @@
         },
         {
             "name": "slothsoft/core",
-            "version": "1.11.16",
+            "version": "1.11.17",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Faulo/slothsoft-core.git",
-                "reference": "9f5606382ebf3254dfb650d544c770600e2cd592"
+                "reference": "9d9fd63cf39576abcd72f74aec1ddbe469a10ef1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Faulo/slothsoft-core/zipball/9f5606382ebf3254dfb650d544c770600e2cd592",
-                "reference": "9f5606382ebf3254dfb650d544c770600e2cd592",
+                "url": "https://api.github.com/repos/Faulo/slothsoft-core/zipball/9d9fd63cf39576abcd72f74aec1ddbe469a10ef1",
+                "reference": "9d9fd63cf39576abcd72f74aec1ddbe469a10ef1",
                 "shasum": ""
             },
             "require": {
@@ -1332,9 +1333,9 @@
             ],
             "support": {
                 "issues": "https://github.com/Faulo/slothsoft-core/issues",
-                "source": "https://github.com/Faulo/slothsoft-core/tree/1.11.16"
+                "source": "https://github.com/Faulo/slothsoft-core/tree/1.11.17"
             },
-            "time": "2024-10-30T10:49:16+00:00"
+            "time": "2024-10-30T15:21:07+00:00"
         },
         {
             "name": "slothsoft/cron",
@@ -1397,16 +1398,16 @@
         },
         {
             "name": "slothsoft/farah",
-            "version": "1.12.5",
+            "version": "1.12.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Faulo/slothsoft-farah.git",
-                "reference": "b31a4f15ebec2f85777462b0bf41c89eb8d1b90a"
+                "reference": "efe683b7c308faf1d4b7b1799f6ba0db64723b0e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Faulo/slothsoft-farah/zipball/b31a4f15ebec2f85777462b0bf41c89eb8d1b90a",
-                "reference": "b31a4f15ebec2f85777462b0bf41c89eb8d1b90a",
+                "url": "https://api.github.com/repos/Faulo/slothsoft-farah/zipball/efe683b7c308faf1d4b7b1799f6ba0db64723b0e",
+                "reference": "efe683b7c308faf1d4b7b1799f6ba0db64723b0e",
                 "shasum": ""
             },
             "require": {
@@ -1468,9 +1469,9 @@
             ],
             "support": {
                 "issues": "https://github.com/Faulo/slothsoft-farah/issues",
-                "source": "https://github.com/Faulo/slothsoft-farah/tree/1.12.5"
+                "source": "https://github.com/Faulo/slothsoft-farah/tree/1.12.7"
             },
-            "time": "2024-10-30T11:48:05+00:00"
+            "time": "2024-10-30T15:27:35+00:00"
         },
         {
             "name": "slothsoft/savegame",
@@ -1667,8 +1668,8 @@
             "type": "library",
             "extra": {
                 "thanks": {
-                    "name": "symfony/polyfill",
-                    "url": "https://github.com/symfony/polyfill"
+                    "url": "https://github.com/symfony/polyfill",
+                    "name": "symfony/polyfill"
                 }
             },
             "autoload": {
@@ -1729,16 +1730,16 @@
         },
         {
             "name": "symfony/process",
-            "version": "v5.4.45",
+            "version": "v5.4.47",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/process.git",
-                "reference": "95f3f19d0f8f06e4253c66a0828ddb69f8b8ede4"
+                "reference": "5d1662fb32ebc94f17ddb8d635454a776066733d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/process/zipball/95f3f19d0f8f06e4253c66a0828ddb69f8b8ede4",
-                "reference": "95f3f19d0f8f06e4253c66a0828ddb69f8b8ede4",
+                "url": "https://api.github.com/repos/symfony/process/zipball/5d1662fb32ebc94f17ddb8d635454a776066733d",
+                "reference": "5d1662fb32ebc94f17ddb8d635454a776066733d",
                 "shasum": ""
             },
             "require": {
@@ -1771,7 +1772,7 @@
             "description": "Executes commands in sub-processes",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/process/tree/v5.4.45"
+                "source": "https://github.com/symfony/process/tree/v5.4.47"
             },
             "funding": [
                 {
@@ -1787,7 +1788,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-09-25T14:11:13+00:00"
+            "time": "2024-11-06T11:36:42+00:00"
         }
     ],
     "packages-dev": [
@@ -1863,16 +1864,16 @@
         },
         {
             "name": "myclabs/deep-copy",
-            "version": "1.12.0",
+            "version": "1.12.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/myclabs/DeepCopy.git",
-                "reference": "3a6b9a42cd8f8771bd4295d13e1423fa7f3d942c"
+                "reference": "123267b2c49fbf30d78a7b2d333f6be754b94845"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/myclabs/DeepCopy/zipball/3a6b9a42cd8f8771bd4295d13e1423fa7f3d942c",
-                "reference": "3a6b9a42cd8f8771bd4295d13e1423fa7f3d942c",
+                "url": "https://api.github.com/repos/myclabs/DeepCopy/zipball/123267b2c49fbf30d78a7b2d333f6be754b94845",
+                "reference": "123267b2c49fbf30d78a7b2d333f6be754b94845",
                 "shasum": ""
             },
             "require": {
@@ -1911,7 +1912,7 @@
             ],
             "support": {
                 "issues": "https://github.com/myclabs/DeepCopy/issues",
-                "source": "https://github.com/myclabs/DeepCopy/tree/1.12.0"
+                "source": "https://github.com/myclabs/DeepCopy/tree/1.12.1"
             },
             "funding": [
                 {
@@ -1919,7 +1920,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-06-12T14:39:25+00:00"
+            "time": "2024-11-08T17:47:46+00:00"
         },
         {
             "name": "phar-io/manifest",
@@ -2338,16 +2339,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "8.5.40",
+            "version": "8.5.41",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "48ed828b72c35b38cdddcd9059339734cb06b3a7"
+                "reference": "d843cb5bcf0bf9ae3484016444fe0c5b6ec7e4fa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/48ed828b72c35b38cdddcd9059339734cb06b3a7",
-                "reference": "48ed828b72c35b38cdddcd9059339734cb06b3a7",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/d843cb5bcf0bf9ae3484016444fe0c5b6ec7e4fa",
+                "reference": "d843cb5bcf0bf9ae3484016444fe0c5b6ec7e4fa",
                 "shasum": ""
             },
             "require": {
@@ -2358,7 +2359,7 @@
                 "ext-mbstring": "*",
                 "ext-xml": "*",
                 "ext-xmlwriter": "*",
-                "myclabs/deep-copy": "^1.12.0",
+                "myclabs/deep-copy": "^1.12.1",
                 "phar-io/manifest": "^2.0.4",
                 "phar-io/version": "^3.2.1",
                 "php": ">=7.2",
@@ -2416,7 +2417,7 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/phpunit/issues",
                 "security": "https://github.com/sebastianbergmann/phpunit/security/policy",
-                "source": "https://github.com/sebastianbergmann/phpunit/tree/8.5.40"
+                "source": "https://github.com/sebastianbergmann/phpunit/tree/8.5.41"
             },
             "funding": [
                 {
@@ -2432,7 +2433,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-09-19T10:47:04+00:00"
+            "time": "2024-12-05T13:44:26+00:00"
         },
         {
             "name": "sebastian/code-unit-reverse-lookup",

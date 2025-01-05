@@ -1,0 +1,18 @@
+# == Windows ==
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# == use opt-in for root ==
+/*
+/*/
+
+# == Composer ==
+!/composer.json
+!/composer.lock
+
+# == Farah ==
+!/assets/
+!/src/
+!/html/
