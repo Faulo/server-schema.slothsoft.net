@@ -1,0 +1,21 @@
+services:
+    frontend:
+        container_name: ${STACK_NAME}_frontend
+        build:
+            dockerfile: Dockerfile.linux
+            args:
+                PHP_VERSION: ${PHP_VERSION}
+        environment:
+            SERVER_NAME: ${SERVER_NAME}
+            VIRTUAL_HOST: ${SERVER_NAME}
+            LETSENCRYPT_HOST: ${SERVER_NAME}
+        networks:
+            - vhosts
+        expose:
+            - 80
+        restart: unless-stopped
+
+networks:
+    vhosts:
+        external: true
+
