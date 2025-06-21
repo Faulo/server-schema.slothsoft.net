@@ -1,6 +1,10 @@
 pipeline {
 	agent {
-		label 'backend && mörkö'
+		label 'docker'
+	}
+	options {
+		disableConcurrentBuilds()
+		disableResume()
 	}
 	stages {
 		stage('Load environment') {
@@ -17,10 +21,8 @@ pipeline {
 							docker.image("faulo/farah:${PHP_VERSION}").inside {
 								callShell 'composer install --no-interaction'
 
-								try {
+								catchError(buildResult: 'UNSTABLE') {
 									callShell 'composer exec phpunit -- --log-junit report.xml'
-								} catch(e) {
-									currentBuild.result = "UNSTABLE"
 								}
 
 								junit 'report.xml'
