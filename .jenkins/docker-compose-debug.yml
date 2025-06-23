@@ -1,7 +1,14 @@
 services:
     frontend:
+        container_name: ${SERVER_NAME}
         image: faulo/farah:${PHP_VERSION}
         volumes:
-            - ..:${DOCKER_WORKDIR}
+            - ../assets:${DOCKER_WORKDIR}/assets
+            - ../cache:${DOCKER_WORKDIR}/cache
+            - ../data:${DOCKER_WORKDIR}/data
+            - ../html:${DOCKER_WORKDIR}/html
+            - ../log:${DOCKER_WORKDIR}/log
+            - ../src:${DOCKER_WORKDIR}/src
+            - ../composer.json:${DOCKER_WORKDIR}/composer.json
         ports:
-            - 8080:80
+            - 80:80

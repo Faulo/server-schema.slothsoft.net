@@ -1,0 +1,8 @@
+services:
+    frontend:
+        container_name: ${SERVER_NAME}
+        image: faulo/farah:${PHP_VERSION}
+        volumes:
+            - ..:/var/www
+        ports:
+            - 8080:80
