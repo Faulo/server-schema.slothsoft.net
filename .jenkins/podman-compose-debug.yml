@@ -1,6 +1,6 @@
 services:
     frontend:
-        container_name: ${SERVER_NAME}
+        container_name: ${STACK_NAME}_frontend
         image: faulo/farah:${PHP_VERSION}
         volumes:
             - ..:/var/www
