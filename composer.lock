@@ -1398,16 +1398,16 @@
         },
         {
             "name": "slothsoft/farah",
-            "version": "1.14.4",
+            "version": "1.16.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Faulo/slothsoft-farah.git",
-                "reference": "cc4f5c017e5a3576e4e1dfa3564bf005d9fb81a5"
+                "reference": "4a4a08635636e3df4f259d6106190fe2a2861818"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Faulo/slothsoft-farah/zipball/cc4f5c017e5a3576e4e1dfa3564bf005d9fb81a5",
-                "reference": "cc4f5c017e5a3576e4e1dfa3564bf005d9fb81a5",
+                "url": "https://api.github.com/repos/Faulo/slothsoft-farah/zipball/4a4a08635636e3df4f259d6106190fe2a2861818",
+                "reference": "4a4a08635636e3df4f259d6106190fe2a2861818",
                 "shasum": ""
             },
             "require": {
@@ -1416,7 +1416,7 @@
                 "laminas/laminas-router": "^3.5",
                 "matthiasmullie/minify": "^1.3",
                 "php": ">=7.4",
-                "php-ds/php-ds": "^1.2",
+                "php-ds/php-ds": "^1.7",
                 "psr/cache": "^1.0",
                 "psr/container": "^1.0",
                 "psr/http-message": "^1.0",
@@ -1439,7 +1439,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-main": "1.14.x-dev"
+                    "dev-main": "1.16.x-dev"
                 }
             },
             "autoload": {
@@ -1469,9 +1469,9 @@
             ],
             "support": {
                 "issues": "https://github.com/Faulo/slothsoft-farah/issues",
-                "source": "https://github.com/Faulo/slothsoft-farah/tree/1.14.4"
+                "source": "https://github.com/Faulo/slothsoft-farah/tree/1.16.0"
             },
-            "time": "2025-07-04T20:10:37+00:00"
+            "time": "2025-07-05T21:02:12+00:00"
         },
         {
             "name": "slothsoft/savegame",
@@ -1538,16 +1538,16 @@
         },
         {
             "name": "slothsoft/schema",
-            "version": "1.3.1",
+            "version": "1.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Faulo/slothsoft-schema.git",
-                "reference": "7cb477921b37d3035fc3f6267795bf8cebe4b9f4"
+                "reference": "8ff2aef6ae9b5256de96f1f911b6599ecf1383f4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Faulo/slothsoft-schema/zipball/7cb477921b37d3035fc3f6267795bf8cebe4b9f4",
-                "reference": "7cb477921b37d3035fc3f6267795bf8cebe4b9f4",
+                "url": "https://api.github.com/repos/Faulo/slothsoft-schema/zipball/8ff2aef6ae9b5256de96f1f911b6599ecf1383f4",
+                "reference": "8ff2aef6ae9b5256de96f1f911b6599ecf1383f4",
                 "shasum": ""
             },
             "require": {
@@ -1591,9 +1591,9 @@
             ],
             "support": {
                 "issues": "https://github.com/Faulo/slothsoft-schema/issues",
-                "source": "https://github.com/Faulo/slothsoft-schema/tree/1.3.1"
+                "source": "https://github.com/Faulo/slothsoft-schema/tree/1.3.2"
             },
-            "time": "2025-07-04T16:41:40+00:00"
+            "time": "2025-07-06T13:08:38+00:00"
         },
         {
             "name": "slothsoft/w3c",
@@ -1864,16 +1864,16 @@
         },
         {
             "name": "myclabs/deep-copy",
-            "version": "1.13.2",
+            "version": "1.13.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/myclabs/DeepCopy.git",
-                "reference": "d25e62e636b0a9b01e3bdebb7823b474876dd829"
+                "reference": "faed855a7b5f4d4637717c2b3863e277116beb36"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/myclabs/DeepCopy/zipball/d25e62e636b0a9b01e3bdebb7823b474876dd829",
-                "reference": "d25e62e636b0a9b01e3bdebb7823b474876dd829",
+                "url": "https://api.github.com/repos/myclabs/DeepCopy/zipball/faed855a7b5f4d4637717c2b3863e277116beb36",
+                "reference": "faed855a7b5f4d4637717c2b3863e277116beb36",
                 "shasum": ""
             },
             "require": {
@@ -1912,7 +1912,7 @@
             ],
             "support": {
                 "issues": "https://github.com/myclabs/DeepCopy/issues",
-                "source": "https://github.com/myclabs/DeepCopy/tree/1.13.2"
+                "source": "https://github.com/myclabs/DeepCopy/tree/1.13.3"
             },
             "funding": [
                 {
@@ -1920,7 +1920,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-07-04T14:07:32+00:00"
+            "time": "2025-07-05T12:25:42+00:00"
         },
         {
             "name": "phar-io/manifest",
