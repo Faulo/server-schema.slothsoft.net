@@ -27,6 +27,7 @@
 		<fragment use="document" name="schema">
 			<use-document ref="//slothsoft@schema/schema/versioning" name="versioning" />
 			<use-document ref="//slothsoft@schema/schema/presskit" name="presskit" />
+			<use-document ref="//slothsoft@schema/schema/historical-games-night" name="historical-games-night" />
 		</fragment>
 		<directory use="document" name="trialoftwo">
 			<resource-directory use="document" name="database" type="application/x-xsd+xml" />
