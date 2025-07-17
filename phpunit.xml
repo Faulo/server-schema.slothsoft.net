@@ -1,7 +1,10 @@
-<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/8.5/phpunit.xsd" colors="true" convertErrorsToExceptions="true"
-	convertNoticesToExceptions="true" convertWarningsToExceptions="true" stopOnFailure="false">
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/9.6/phpunit.xsd" bootstrap="vendor/autoload.php" colors="true"
+	noInteraction="true" convertErrorsToExceptions="true" convertNoticesToExceptions="true" convertWarningsToExceptions="true" convertDeprecationsToExceptions="true" stopOnFailure="false"
+	stopOnDefect="false" stopOnError="false" stopOnRisky="false" stopOnIncomplete="false" stopOnSkipped="false" stopOnWarning="false" failOnWarning="true" failOnEmptyTestSuite="true"
+	failOnIncomplete="true" failOnRisky="true" failOnSkipped="false" beStrictAboutOutputDuringTests="true" beStrictAboutCoversAnnotation="true" beStrictAboutTestsThatDoNotTestAnything="true"
+	beStrictAboutChangesToGlobalState="true" beStrictAboutTodoAnnotatedTests="true">
 	<testsuites>
-		<testsuite name="Unit Tests">
+		<testsuite name="Tests">
 			<directory>tests</directory>
 		</testsuite>
 	</testsuites>

@@ -17,15 +17,15 @@
 		}
 	},
 	"require" : {
-		"slothsoft/core" : "^1.11",
-		"slothsoft/farah" : "^1.12",
+		"slothsoft/core" : "^1.13",
+		"slothsoft/farah" : "^1.16",
 		"slothsoft/schema" : "^1.1",
 		"slothsoft/amber" : "^1.1",
 		"slothsoft/cron" : "^1.0",
 		"slothsoft/savegame" : "^1.0"
 	},
 	"require-dev" : {
-		"phpunit/phpunit" : "8.5.*"
+		"phpunit/phpunit" : "~9.6.23"
 	},
 	"autoload-dev" : {
 		"psr-4" : {
