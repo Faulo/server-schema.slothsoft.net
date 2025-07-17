@@ -14,8 +14,8 @@ pipeline {
 						stage('Setup dependencies') {
 							callShell "docker pull faulo/farah:${PHP_VERSION}"
 
-							env.DOCKER_OS_TYPE = callShellStdout 'docker info --format {{.OSType}}'
-							env.DOCKER_WORKDIR = callShellStdout 'docker image inspect faulo/farah:${PHP_VERSION} --format={{.Config.WorkingDir}}'
+							env.DOCKER_OS_TYPE = callShellStdout "docker info --format '{{.OSType}}'"
+							env.DOCKER_WORKDIR = callShellStdout "docker image inspect faulo/farah:${PHP_VERSION} --format '{{.Config.WorkingDir}}'"
 						}
 						stage ('Run tests') {
 							docker.image("faulo/farah:${PHP_VERSION}").inside {
