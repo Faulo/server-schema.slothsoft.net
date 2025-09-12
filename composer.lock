@@ -1404,16 +1404,16 @@
         },
         {
             "name": "slothsoft/farah",
-            "version": "1.16.6",
+            "version": "1.16.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Faulo/slothsoft-farah.git",
-                "reference": "220b993310c99fb004d0f6ee3640ae2a8a02f8ec"
+                "reference": "ffe9e34d2c5c62749a86501c5e21a28bdc1319da"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Faulo/slothsoft-farah/zipball/220b993310c99fb004d0f6ee3640ae2a8a02f8ec",
-                "reference": "220b993310c99fb004d0f6ee3640ae2a8a02f8ec",
+                "url": "https://api.github.com/repos/Faulo/slothsoft-farah/zipball/ffe9e34d2c5c62749a86501c5e21a28bdc1319da",
+                "reference": "ffe9e34d2c5c62749a86501c5e21a28bdc1319da",
                 "shasum": ""
             },
             "require": {
@@ -1428,7 +1428,7 @@
                 "psr/http-message": "^1.0",
                 "psr/log": "^1.0",
                 "slothsoft/blob": "^1.0",
-                "slothsoft/core": "^1.11.16"
+                "slothsoft/core": "^1.13.5"
             },
             "require-dev": {
                 "phpunit/phpunit": "~9.6.23"
@@ -1475,9 +1475,9 @@
             ],
             "support": {
                 "issues": "https://github.com/Faulo/slothsoft-farah/issues",
-                "source": "https://github.com/Faulo/slothsoft-farah/tree/1.16.6"
+                "source": "https://github.com/Faulo/slothsoft-farah/tree/1.16.7"
             },
-            "time": "2025-09-04T01:04:19+00:00"
+            "time": "2025-09-12T15:15:23+00:00"
         },
         {
             "name": "slothsoft/savegame",
@@ -1544,16 +1544,16 @@
         },
         {
             "name": "slothsoft/schema",
-            "version": "1.4.2",
+            "version": "1.4.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Faulo/slothsoft-schema.git",
-                "reference": "356e1a2e6aaafb53f1cd8148c4e9df53dba5911d"
+                "reference": "2dfa7c485fcf95644fb552f7ee6e7ffc966fa0d2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Faulo/slothsoft-schema/zipball/356e1a2e6aaafb53f1cd8148c4e9df53dba5911d",
-                "reference": "356e1a2e6aaafb53f1cd8148c4e9df53dba5911d",
+                "url": "https://api.github.com/repos/Faulo/slothsoft-schema/zipball/2dfa7c485fcf95644fb552f7ee6e7ffc966fa0d2",
+                "reference": "2dfa7c485fcf95644fb552f7ee6e7ffc966fa0d2",
                 "shasum": ""
             },
             "require": {
@@ -1597,9 +1597,9 @@
             ],
             "support": {
                 "issues": "https://github.com/Faulo/slothsoft-schema/issues",
-                "source": "https://github.com/Faulo/slothsoft-schema/tree/1.4.2"
+                "source": "https://github.com/Faulo/slothsoft-schema/tree/1.4.3"
             },
-            "time": "2025-09-10T21:03:33+00:00"
+            "time": "2025-09-12T14:03:39+00:00"
         },
         {
             "name": "slothsoft/w3c",
@@ -2429,16 +2429,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "9.6.25",
+            "version": "9.6.26",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "049c011e01be805202d8eebedef49f769a8ec7b7"
+                "reference": "a0139ea157533454f611038326f3020b3051f129"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/049c011e01be805202d8eebedef49f769a8ec7b7",
-                "reference": "049c011e01be805202d8eebedef49f769a8ec7b7",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/a0139ea157533454f611038326f3020b3051f129",
+                "reference": "a0139ea157533454f611038326f3020b3051f129",
                 "shasum": ""
             },
             "require": {
@@ -2512,7 +2512,7 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/phpunit/issues",
                 "security": "https://github.com/sebastianbergmann/phpunit/security/policy",
-                "source": "https://github.com/sebastianbergmann/phpunit/tree/9.6.25"
+                "source": "https://github.com/sebastianbergmann/phpunit/tree/9.6.26"
             },
             "funding": [
                 {
@@ -2536,7 +2536,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-08-20T14:38:31+00:00"
+            "time": "2025-09-11T06:17:45+00:00"
         },
         {
             "name": "sebastian/cli-parser",
