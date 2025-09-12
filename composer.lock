@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "60fb8a160d5d17b2630c5577f37778f6",
+    "content-hash": "4a7a9267c846eb52ded7d0c5deb4bfaa",
     "packages": [
         {
             "name": "guzzlehttp/psr7",
@@ -1404,7 +1404,7 @@
         },
         {
             "name": "slothsoft/farah",
-            "version": "dev-main",
+            "version": "1.16.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Faulo/slothsoft-farah.git",
@@ -1438,7 +1438,6 @@
                 "ext-pthreads": "*",
                 "krakjoe/pthreads-polyfill": "^1.1"
             },
-            "default-branch": true,
             "bin": [
                 "scripts/farah-asset",
                 "scripts/farah-page"
@@ -1476,7 +1475,7 @@
             ],
             "support": {
                 "issues": "https://github.com/Faulo/slothsoft-farah/issues",
-                "source": "https://github.com/Faulo/slothsoft-farah/tree/main"
+                "source": "https://github.com/Faulo/slothsoft-farah/tree/1.16.8"
             },
             "time": "2025-09-12T16:00:24+00:00"
         },
@@ -1545,16 +1544,16 @@
         },
         {
             "name": "slothsoft/schema",
-            "version": "1.4.3",
+            "version": "1.4.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Faulo/slothsoft-schema.git",
-                "reference": "2dfa7c485fcf95644fb552f7ee6e7ffc966fa0d2"
+                "reference": "fac24474d76658ebfcbbb2fb41459014c0b2d5d5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Faulo/slothsoft-schema/zipball/2dfa7c485fcf95644fb552f7ee6e7ffc966fa0d2",
-                "reference": "2dfa7c485fcf95644fb552f7ee6e7ffc966fa0d2",
+                "url": "https://api.github.com/repos/Faulo/slothsoft-schema/zipball/fac24474d76658ebfcbbb2fb41459014c0b2d5d5",
+                "reference": "fac24474d76658ebfcbbb2fb41459014c0b2d5d5",
                 "shasum": ""
             },
             "require": {
@@ -1598,9 +1597,9 @@
             ],
             "support": {
                 "issues": "https://github.com/Faulo/slothsoft-schema/issues",
-                "source": "https://github.com/Faulo/slothsoft-schema/tree/1.4.3"
+                "source": "https://github.com/Faulo/slothsoft-schema/tree/1.4.4"
             },
-            "time": "2025-09-12T14:03:39+00:00"
+            "time": "2025-09-12T16:04:58+00:00"
         },
         {
             "name": "slothsoft/w3c",
@@ -3591,9 +3590,7 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "slothsoft/farah": 20
-    },
+    "stability-flags": {},
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {},
