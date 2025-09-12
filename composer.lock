@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "286e22e024ece1797b56328291391670",
+    "content-hash": "60fb8a160d5d17b2630c5577f37778f6",
     "packages": [
         {
             "name": "guzzlehttp/psr7",
@@ -1404,16 +1404,16 @@
         },
         {
             "name": "slothsoft/farah",
-            "version": "1.16.7",
+            "version": "dev-main",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Faulo/slothsoft-farah.git",
-                "reference": "ffe9e34d2c5c62749a86501c5e21a28bdc1319da"
+                "reference": "c505b3c28717712b168b2c7bf685bf95c132ccf8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Faulo/slothsoft-farah/zipball/ffe9e34d2c5c62749a86501c5e21a28bdc1319da",
-                "reference": "ffe9e34d2c5c62749a86501c5e21a28bdc1319da",
+                "url": "https://api.github.com/repos/Faulo/slothsoft-farah/zipball/c505b3c28717712b168b2c7bf685bf95c132ccf8",
+                "reference": "c505b3c28717712b168b2c7bf685bf95c132ccf8",
                 "shasum": ""
             },
             "require": {
@@ -1438,6 +1438,7 @@
                 "ext-pthreads": "*",
                 "krakjoe/pthreads-polyfill": "^1.1"
             },
+            "default-branch": true,
             "bin": [
                 "scripts/farah-asset",
                 "scripts/farah-page"
@@ -1475,9 +1476,9 @@
             ],
             "support": {
                 "issues": "https://github.com/Faulo/slothsoft-farah/issues",
-                "source": "https://github.com/Faulo/slothsoft-farah/tree/1.16.7"
+                "source": "https://github.com/Faulo/slothsoft-farah/tree/main"
             },
-            "time": "2025-09-12T15:15:23+00:00"
+            "time": "2025-09-12T16:00:24+00:00"
         },
         {
             "name": "slothsoft/savegame",
@@ -3590,7 +3591,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {},
+    "stability-flags": {
+        "slothsoft/farah": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {},
