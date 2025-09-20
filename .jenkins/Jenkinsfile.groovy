@@ -21,7 +21,7 @@ pipeline {
 							docker.image("faulo/farah:${PHP_VERSION}").inside {
 								callShell 'composer install --no-interaction'
 
-								catchError(buildResult: 'UNSTABLE') {
+								catchError(buildResult: 'UNSTABLE', catchInterruptions: false) {
 									callShell 'composer exec phpunit -- --log-junit report.xml'
 								}
 
