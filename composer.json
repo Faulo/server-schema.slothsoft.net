@@ -18,7 +18,7 @@
 	},
 	"require" : {
 		"slothsoft/core" : "^1.13",
-		"slothsoft/farah" : "1.21.6",
+		"slothsoft/farah" : "^1.21.11",
 		"slothsoft/schema" : "^1.1",
 		"slothsoft/amber" : "^1.1",
 		"slothsoft/cron" : "^1.0",
