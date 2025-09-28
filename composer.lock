@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "672043095a00b70b07397a9829cd2176",
+    "content-hash": "51e1f57002d2228bbba35090598b167f",
     "packages": [
         {
             "name": "guzzlehttp/psr7",
@@ -1404,16 +1404,16 @@
         },
         {
             "name": "slothsoft/farah",
-            "version": "1.21.6",
+            "version": "1.21.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Faulo/slothsoft-farah.git",
-                "reference": "0a08c6478fc2e2d10d761c6b4b9de44ed3181e16"
+                "reference": "dd3b6779b6a782f733a57e3b7c23a4bdeccbee11"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Faulo/slothsoft-farah/zipball/0a08c6478fc2e2d10d761c6b4b9de44ed3181e16",
-                "reference": "0a08c6478fc2e2d10d761c6b4b9de44ed3181e16",
+                "url": "https://api.github.com/repos/Faulo/slothsoft-farah/zipball/dd3b6779b6a782f733a57e3b7c23a4bdeccbee11",
+                "reference": "dd3b6779b6a782f733a57e3b7c23a4bdeccbee11",
                 "shasum": ""
             },
             "require": {
@@ -1428,7 +1428,7 @@
                 "psr/http-message": "^1.0",
                 "psr/log": "^1.0",
                 "slothsoft/blob": "^1.0",
-                "slothsoft/core": "^1.13.7"
+                "slothsoft/core": "^1.13.9"
             },
             "require-dev": {
                 "phpunit/phpunit": "~9.6.23"
@@ -1476,9 +1476,9 @@
             ],
             "support": {
                 "issues": "https://github.com/Faulo/slothsoft-farah/issues",
-                "source": "https://github.com/Faulo/slothsoft-farah/tree/1.21.6"
+                "source": "https://github.com/Faulo/slothsoft-farah/tree/1.21.14"
             },
-            "time": "2025-09-24T07:53:47+00:00"
+            "time": "2025-09-28T18:45:53+00:00"
         },
         {
             "name": "slothsoft/savegame",
