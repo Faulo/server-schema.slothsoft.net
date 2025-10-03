@@ -21,7 +21,7 @@ pipeline {
 						}
 						stage ('Run tests') {
 							withDockerContainer(image: "faulo/farah:${PHP_VERSION}", toolName: 'Default', args: '-v /var/vhosts/schema.slothsoft.net:$WORKSPACE/data') {
-								callShell 'composer install --no-interaction'
+								callShell 'composer install --no-interaction --optimize-autoloader --classmap-authoritative'
 								callShell 'composer exec server-clean cache logs'
 
 								catchError(buildResult: 'UNSTABLE', catchInterruptions: false) {
