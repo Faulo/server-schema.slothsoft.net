@@ -1149,16 +1149,16 @@
         },
         {
             "name": "slothsoft/amber",
-            "version": "1.1.13",
+            "version": "1.1.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Faulo/slothsoft-amber.git",
-                "reference": "424ecebe30dbebe4e4adc8ee232097a19cb5a03d"
+                "reference": "2d0af21949f222a32b8ffb31767d2c7a44cbdaf2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Faulo/slothsoft-amber/zipball/424ecebe30dbebe4e4adc8ee232097a19cb5a03d",
-                "reference": "424ecebe30dbebe4e4adc8ee232097a19cb5a03d",
+                "url": "https://api.github.com/repos/Faulo/slothsoft-amber/zipball/2d0af21949f222a32b8ffb31767d2c7a44cbdaf2",
+                "reference": "2d0af21949f222a32b8ffb31767d2c7a44cbdaf2",
                 "shasum": ""
             },
             "require": {
@@ -1166,7 +1166,7 @@
                 "ext-imagick": "*",
                 "php": ">=7.4",
                 "slothsoft/core": "^1.13.3",
-                "slothsoft/farah": "^1.19.3",
+                "slothsoft/farah": "^1.21.3",
                 "slothsoft/savegame": "^1.0.10"
             },
             "require-dev": {
@@ -1205,9 +1205,9 @@
             ],
             "support": {
                 "issues": "https://github.com/Faulo/slothsoft-amber/issues",
-                "source": "https://github.com/Faulo/slothsoft-amber/tree/1.1.13"
+                "source": "https://github.com/Faulo/slothsoft-amber/tree/1.1.14"
             },
-            "time": "2025-09-19T17:17:58+00:00"
+            "time": "2025-10-03T21:10:15+00:00"
         },
         {
             "name": "slothsoft/blob",
@@ -1404,16 +1404,16 @@
         },
         {
             "name": "slothsoft/farah",
-            "version": "1.21.22",
+            "version": "1.21.23",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Faulo/slothsoft-farah.git",
-                "reference": "58613ae6810dc26987dbccf4971a41248cf60e96"
+                "reference": "bf3629266c0382f9d619caf21e75b8adb6173364"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Faulo/slothsoft-farah/zipball/58613ae6810dc26987dbccf4971a41248cf60e96",
-                "reference": "58613ae6810dc26987dbccf4971a41248cf60e96",
+                "url": "https://api.github.com/repos/Faulo/slothsoft-farah/zipball/bf3629266c0382f9d619caf21e75b8adb6173364",
+                "reference": "bf3629266c0382f9d619caf21e75b8adb6173364",
                 "shasum": ""
             },
             "require": {
@@ -1476,9 +1476,9 @@
             ],
             "support": {
                 "issues": "https://github.com/Faulo/slothsoft-farah/issues",
-                "source": "https://github.com/Faulo/slothsoft-farah/tree/1.21.22"
+                "source": "https://github.com/Faulo/slothsoft-farah/tree/1.21.23"
             },
-            "time": "2025-10-03T20:33:42+00:00"
+            "time": "2025-10-04T18:00:27+00:00"
         },
         {
             "name": "slothsoft/savegame",
