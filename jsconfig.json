@@ -13,6 +13,9 @@
       "/slothsoft@savegame/*": [
         "../slothsoft-savegame/assets/*"
       ],
+      "/slothsoft@schema.slothsoft.net/*": [
+        "./assets/*"
+      ],
       "/slothsoft@schema/*": [
         "../slothsoft-schema/assets/*"
       ]
