@@ -25,7 +25,8 @@
 		"slothsoft/savegame" : "^1.0"
 	},
 	"require-dev" : {
-		"phpunit/phpunit" : "~9.6.23"
+		"phpunit/phpunit" : "~9.6.23",
+		"slothsoft/farah-testing" : "^1.1.2"
 	},
 	"autoload-dev" : {
 		"psr-4" : {

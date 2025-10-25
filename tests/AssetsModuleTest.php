@@ -3,7 +3,7 @@ declare(strict_types = 1);
 namespace Slothsoft\Server\Schema\Tests;
 
 use Slothsoft\Farah\FarahUrl\FarahUrlAuthority;
-use Slothsoft\Farah\ModuleTests\AbstractModuleTest;
+use Slothsoft\FarahTesting\Module\AbstractModuleTest;
 
 class AssetsModuleTest extends AbstractModuleTest {
 
