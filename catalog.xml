@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+  <uri name="farah://slothsoft@schema.slothsoft.net/sitemap/template" uri="assets/sitemap/template.xsl"/>
+  <uri name="farah://slothsoft@schema.slothsoft.net/xsl/index" uri="assets/xsl/index.xsl"/>
+  <uri name="http://schema.slothsoft.net/trialoftwo/database" uri="assets/schemata/trialoftwo/database/0.2.xsd"/>
+  <system systemId="farah://slothsoft@schema.slothsoft.net/schemata/trialoftwo/database/0.1" uri="assets/schemata/trialoftwo/database/0.1.xsd"/>
+  <system systemId="farah://slothsoft@schema.slothsoft.net/schemata/trialoftwo/database/0.2" uri="assets/schemata/trialoftwo/database/0.2.xsd"/>
+</catalog>
