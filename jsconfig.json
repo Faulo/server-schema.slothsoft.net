@@ -2,22 +2,22 @@
   "compilerOptions": {
     "paths": {
       "/slothsoft@amber/*": [
-        "../slothsoft-amber/assets/*"
+        "vendor/slothsoft/amber/assets/*"
       ],
       "/slothsoft@cron/*": [
-        "../slothsoft-cron/assets/*"
+        "vendor/slothsoft/cron/assets/*"
       ],
       "/slothsoft@farah/*": [
-        "../slothsoft-farah/assets/*"
+        "vendor/slothsoft/farah/assets/*"
       ],
       "/slothsoft@savegame/*": [
-        "../slothsoft-savegame/assets/*"
+        "vendor/slothsoft/savegame/assets/*"
       ],
       "/slothsoft@schema.slothsoft.net/*": [
-        "./assets/*"
+        "assets/*"
       ],
       "/slothsoft@schema/*": [
-        "../slothsoft-schema/assets/*"
+        "vendor/slothsoft/schema/assets/*"
       ]
     }
   }
