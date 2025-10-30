@@ -25,6 +25,11 @@
 	
 	
 	
+	
+	
+	
+	
+	
 	<buildpathentry kind="con" path="org.eclipse.php.core.LANGUAGE"/>
 	<buildpathentry kind="src" path="src">
 		<attributes>
