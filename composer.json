@@ -18,8 +18,8 @@
 	},
 	"require" : {
 		"slothsoft/core" : "^1.14",
-		"slothsoft/farah" : "^1.25",
-		"slothsoft/schema" : "^1.1",
+		"slothsoft/farah" : "^1.26",
+		"slothsoft/schema" : "^1.5.14",
 		"slothsoft/amber" : "^1.1",
 		"slothsoft/cron" : "^1.0",
 		"slothsoft/savegame" : "^1.0"

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sfd:dictionary xmlns="http://www.w3.org/1999/xhtml" xmlns:sfd="http://schema.slothsoft.net/farah/dictionary" version="1.0">
+    <sfd:text xml:id="title">Slothsoft Schema: </sfd:text>
+    <sfd:text xml:id="header.1">Dieses Dokument beschreibt den Namensraum </sfd:text>
+    <sfd:text xml:id="header.2">, üblicherweise prefixiert als </sfd:text>
+    <sfd:text xml:id="header.3">.</sfd:text>
+
+    <sfd:text xml:id="home.table.caption">Die folgenden Spezifikationen definieren diesen Namensraum:</sfd:text>
+    <sfd:text xml:id="home.table.version">Version</sfd:text>
+    <sfd:text xml:id="home.table.revision">Revision</sfd:text>
+    <sfd:text xml:id="home.table.documentation">Dokumentation</sfd:text>
+    <sfd:text xml:id="home.table.download">Download</sfd:text>
+
+    <sfd:text xml:id="footer.copyright">© 2017-2020 </sfd:text>
+    <sfd:fragment xml:id="footer.company">
+        <a href="http://slothsoft.net" target="_blank" rel="external">Slothsoft</a>
+    </sfd:fragment>
+
+    <sfd:text xml:id="doc.toc">Inhalt</sfd:text>
+    <sfd:text xml:id="doc.elements-in-namespace">Elemente im Namensraum </sfd:text>
+    <sfd:text xml:id="doc.attributes-in-namespace">Attribute im Namensraum </sfd:text>
+    <sfd:text xml:id="doc.categories-in-namespace">Kategorien im Namensraum </sfd:text>
+    <sfd:text xml:id="doc.content-models-in-namespace">Content Models im Namensraum </sfd:text>
+
+    <sfd:text xml:id="doc.the-element">Das Element </sfd:text>
+    <sfd:text xml:id="doc.the-attribute">Das Attribut </sfd:text>
+    <sfd:text xml:id="doc.the-category">Die Kategorie </sfd:text>
+    <sfd:text xml:id="doc.the-content-model">Das Content Model </sfd:text>
+
+
+    <sfd:text xml:id="doc.category">Kategorie:</sfd:text>
+    <sfd:text xml:id="doc.content-model">Content Model:</sfd:text>
+    <sfd:text xml:id="doc.content-model-ancestors">Content Model, von dem dieses Model abgeleitet ist:</sfd:text>
+    <sfd:text xml:id="doc.content-model-heirs">Content Models, die dieses Model ableiten:</sfd:text>
+    <sfd:text xml:id="doc.element-children">Mögliche Kind-Elemente:</sfd:text>
+    <sfd:text xml:id="doc.element-parents">Kontext, in welchem dieses Element vorkommen kann:</sfd:text>
+    <sfd:text xml:id="doc.attribute-children">Mögliche Attribute:</sfd:text>
+    <sfd:text xml:id="doc.attribute-parents">Elemente, die dieses Attribut verwenden:</sfd:text>
+
+    <sfd:text xml:id="doc.is-root">Wurzelelement</sfd:text>
+    <sfd:text xml:id="doc.required">Erforderlich:</sfd:text>
+    <sfd:text xml:id="doc.required.true">Ja</sfd:text>
+    <sfd:text xml:id="doc.required.false">Nein</sfd:text>
+    <sfd:text xml:id="doc.value-patterns">Erlaubtes Muster:</sfd:text>
+    <sfd:text xml:id="doc.value-tokens">Mögliche Werte:</sfd:text>
+
+    <sfd:text xml:id="doc.elements-in-content-model">Elemente, die dieses Content Model verwenden:</sfd:text>
+    <sfd:text xml:id="doc.elements-in-category">Elemente in dieser Kategorie:</sfd:text>
+    <sfd:text xml:id="doc.attributes-in-content-model">Attribute, die dieses Content Model verwenden:</sfd:text>
+    <sfd:text xml:id="doc.attributes-in-category">Attribute in dieser Kategorie:</sfd:text>
+</sfd:dictionary>

@@ -1,57 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us">
-	<p key="title">Slothsoft Schema: </p>
-	<p key="header/1">This document describes the namespace </p>
-	<p key="header/2">, conventionally prefixed as </p>
-	<p key="header/3">.</p>
+<sfd:dictionary xmlns="http://www.w3.org/1999/xhtml" xmlns:sfd="http://schema.slothsoft.net/farah/dictionary" version="1.0">
+    <sfd:text xml:id="title">Slothsoft Schema: </sfd:text>
+    <sfd:text xml:id="header.1">This document describes the namespace </sfd:text>
+    <sfd:text xml:id="header.2">, conventionally prefixed as </sfd:text>
+    <sfd:text xml:id="header.3">.</sfd:text>
 
-	<p key="home/table/caption">The following specifications define this namespace:</p>
-	<p key="home/table/version">Version</p>
-	<p key="home/table/revision">Revision</p>
-	<p key="home/table/documentation">Documentation</p>
-	<p key="home/table/download">Download</p>
+    <sfd:text xml:id="home.table.caption">The following specifications define this namespace:</sfd:text>
+    <sfd:text xml:id="home.table.version">Version</sfd:text>
+    <sfd:text xml:id="home.table.revision">Revision</sfd:text>
+    <sfd:text xml:id="home.table.documentation">Documentation</sfd:text>
+    <sfd:text xml:id="home.table.download">Download</sfd:text>
 
-	<p key="footer/copyright">© 2017-2020 </p>
-	<p key="footer/company">
-		<a href="http://slothsoft.net" target="_blank" rel="external">Slothsoft</a>
-	</p>
+    <sfd:text xml:id="footer.copyright">© 2017-2026 </sfd:text>
+    <sfd:fragment xml:id="footer.company">
+        <a href="https://slothsoft.net" target="_blank" rel="external">Slothsoft</a>
+    </sfd:fragment>
 
-	<p key="doc/toc">Table of contents</p>
-	<p key="doc/elements-in-namespace">Elements in namespace </p>
-	<p key="doc/attributes-in-namespace">Attributes in namespace </p>
-	<p key="doc/categories-in-namespace">Categories in namespace </p>
-	<p key="doc/groups-in-namespace">Groups in namespace </p>
-	<p key="doc/content-models-in-namespace">Content models in namespace </p>
+    <sfd:text xml:id="doc.toc">Table of contents</sfd:text>
+    <sfd:text xml:id="doc.elements-in-namespace">Elements in namespace </sfd:text>
+    <sfd:text xml:id="doc.attributes-in-namespace">Attributes in namespace </sfd:text>
+    <sfd:text xml:id="doc.categories-in-namespace">Categories in namespace </sfd:text>
+    <sfd:text xml:id="doc.groups-in-namespace">Groups in namespace </sfd:text>
+    <sfd:text xml:id="doc.content-models-in-namespace">Content models in namespace </sfd:text>
 
-	<p key="doc/the-element">The element </p>
-	<p key="doc/the-attribute">The attribute </p>
-	<p key="doc/the-category">The category </p>
-	<p key="doc/the-group">The group </p>
-	<p key="doc/the-content-model">The content model </p>
+    <sfd:text xml:id="doc.the-element">The element </sfd:text>
+    <sfd:text xml:id="doc.the-attribute">The attribute </sfd:text>
+    <sfd:text xml:id="doc.the-category">The category </sfd:text>
+    <sfd:text xml:id="doc.the-group">The group </sfd:text>
+    <sfd:text xml:id="doc.the-content-model">The content model </sfd:text>
 
-	<p key="doc/category">Category:</p>
-	<p key="doc/content-model">Content model:</p>
-	<p key="doc/content-model-ancestors">This content model extends:</p>
-	<p key="doc/content-model-heirs">This content model is extended by:</p>
-	<p key="doc/element-children">Possible child elements:</p>
-	<p key="doc/element-parents">Context in which this element may appear:</p>
-	<p key="doc/attribute-children">Possible attributes:</p>
-	<p key="doc/attribute-parents">Elements which use this attribute:</p>
+    <sfd:text xml:id="doc.category">Category:</sfd:text>
+    <sfd:text xml:id="doc.content-model">Content model:</sfd:text>
+    <sfd:text xml:id="doc.content-model-ancestors">This content model extends:</sfd:text>
+    <sfd:text xml:id="doc.content-model-heirs">This content model is extended by:</sfd:text>
+    <sfd:text xml:id="doc.element-children">Possible child elements:</sfd:text>
+    <sfd:text xml:id="doc.element-parents">Context in which this element may appear:</sfd:text>
+    <sfd:text xml:id="doc.attribute-children">Possible attributes:</sfd:text>
+    <sfd:text xml:id="doc.attribute-parents">Elements which use this attribute:</sfd:text>
 
-	<p key="doc/is-root">document root</p>
-	<p key="doc/required">Required:</p>
-	<p key="doc/required/true">Yes</p>
-	<p key="doc/required/false">No</p>
-	<p key="doc/value-patterns">Allowed content:</p>
-	<p key="doc/value-tokens">Allowed content:</p>
+    <sfd:text xml:id="doc.is-root">document root</sfd:text>
+    <sfd:text xml:id="doc.required">Required:</sfd:text>
+    <sfd:text xml:id="doc.required.true">Yes</sfd:text>
+    <sfd:text xml:id="doc.required.false">No</sfd:text>
+    <sfd:text xml:id="doc.value-patterns">Allowed content:</sfd:text>
+    <sfd:text xml:id="doc.value-tokens">Allowed content:</sfd:text>
 
-	<p key="doc/elements-in-category">Elements in this category:</p>
-	<p key="doc/attributes-in-category">Attributes in this category:</p>
-	<p key="doc/elements-in-group">Elements in this group:</p>
-	<p key="doc/attributes-in-group">Attributes in this group:</p>
-	<p key="doc/elements-in-content-model">Elements which use this content model:</p>
-	<p key="doc/attributes-in-content-model">Attributes which use this content model:</p>
+    <sfd:text xml:id="doc.elements-in-category">Elements in this category:</sfd:text>
+    <sfd:text xml:id="doc.attributes-in-category">Attributes in this category:</sfd:text>
+    <sfd:text xml:id="doc.elements-in-group">Elements in this group:</sfd:text>
+    <sfd:text xml:id="doc.attributes-in-group">Attributes in this group:</sfd:text>
+    <sfd:text xml:id="doc.elements-in-content-model">Elements which use this content model:</sfd:text>
+    <sfd:text xml:id="doc.attributes-in-content-model">Attributes which use this content model:</sfd:text>
 
-	<p key="home/changelog">Changelog of most recent release:</p>
-	<p key="doc/changelog">Changelog</p>
-</html>
+    <sfd:text xml:id="home.changelog">Changelog of most recent release:</sfd:text>
+    <sfd:text xml:id="doc.changelog">Changelog</sfd:text>
+</sfd:dictionary>

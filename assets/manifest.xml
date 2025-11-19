@@ -1,55 +1,58 @@
 <?xml version="1.0"?>
 <assets xmlns="http://schema.slothsoft.net/farah/module" version="1.1">
-	<resource-directory name="css" type="text/css" />
-	<resource-directory name="xsl" type="application/xslt+xml" />
-	<resource-directory name="dictionary" type="application/xml" />
+    <resource-directory name="css" type="text/css" />
+    <resource-directory name="xsl" type="application/xslt+xml" />
+    <resource-directory name="dictionary" type="application/xml" />
 
-	<directory name="sitemap">
-		<resource use="template" name="template" type="application/xslt+xml" />
-		<use-document ref="/schemata" name="schemata" />
-	</directory>
+    <directory name="sitemap">
+        <resource use="template" name="template" type="application/xslt+xml" />
+        <use-document ref="/schemata" name="schemata" />
+    </directory>
 
-	<directory name="schemata">
-		<fragment use="document" name="amber">
-			<use-document ref="//slothsoft@amber/schema/amberdata" name="amberdata" />
-		</fragment>
-		<fragment use="document" name="cron">
-			<use-document ref="//slothsoft@cron/schema/instructions" name="instructions" />
-		</fragment>
-		<fragment use="document" name="farah">
-			<use-document ref="//slothsoft@farah/schema/module" name="module" />
-			<use-document ref="//slothsoft@farah/schema/sitemap" name="sitemap" />
-			<use-document ref="//slothsoft@farah/schema/dictionary" name="dictionary" />
-		</fragment>
-		<fragment use="document" name="savegame">
-			<use-document ref="//slothsoft@savegame/schema/editor" name="editor" />
-		</fragment>
-		<fragment use="document" name="schema">
-			<use-document ref="//slothsoft@schema/schema/versioning" name="versioning" />
-			<use-document ref="//slothsoft@schema/schema/presskit" name="presskit" />
-			<use-document ref="//slothsoft@schema/schema/historical-games-night" name="historical-games-night" />
-		</fragment>
-		<directory use="document" name="trialoftwo">
-			<resource-directory use="document" name="database" type="application/x-xsd+xml" />
-		</directory>
-	</directory>
+    <directory name="schemata">
+        <fragment use="document" name="amber">
+            <use-document ref="//slothsoft@amber/schema/amberdata" name="amberdata" />
+        </fragment>
+        <fragment use="document" name="cron">
+            <use-document ref="//slothsoft@cron/schema/instructions" name="instructions" />
+        </fragment>
+        <fragment use="document" name="farah">
+            <use-document ref="//slothsoft@farah/schema/module" name="module" />
+            <use-document ref="//slothsoft@farah/schema/sitemap" name="sitemap" />
+            <use-document ref="//slothsoft@farah/schema/dictionary" name="dictionary" />
+        </fragment>
+        <fragment use="document" name="savegame">
+            <use-document ref="//slothsoft@savegame/schema/editor" name="editor" />
+        </fragment>
+        <fragment use="document" name="schema">
+            <use-document ref="//slothsoft@schema/schema/versioning" name="versioning" />
+            <use-document ref="//slothsoft@schema/schema/presskit" name="presskit" />
+            <use-document ref="//slothsoft@schema/schema/historical-games-night" name="historical-games-night" />
+        </fragment>
+        <directory use="document" name="trialoftwo">
+            <resource-directory use="document" name="database" type="application/x-xsd+xml" />
+        </directory>
+    </directory>
 
-	<fragment name="pages">
-		<fragment name="index">
-			<use-template ref="/xsl/index" />
-			<use-document ref="/schemata" name="schemata" />
-			<use-document ref="//slothsoft@farah/sites" name="sites" />
-			<link-stylesheet ref="/css/theme" />
-		</fragment>
-		<fragment name="schema">
-			<fragment name="home">
-				<import ref="//slothsoft@schema/html/home" />
-				<link-stylesheet ref="/css/theme" />
-			</fragment>
-			<fragment name="documentation">
-				<import ref="//slothsoft@schema/html/documentation" />
-				<link-stylesheet ref="/css/theme" />
-			</fragment>
-		</fragment>
-	</fragment>
+    <fragment name="pages">
+        <fragment name="index">
+            <use-template ref="/xsl/index" />
+            <use-document ref="/schemata" name="schemata" />
+            <use-document ref="//slothsoft@farah/sites" name="sites" />
+            <link-stylesheet ref="/css/theme" />
+            <link-dictionary ref="/dictionary" />
+        </fragment>
+        <fragment name="schema">
+            <fragment name="home">
+                <import ref="//slothsoft@schema/html/home" />
+                <link-stylesheet ref="/css/theme" />
+                <link-dictionary ref="/dictionary" />
+            </fragment>
+            <fragment name="documentation">
+                <import ref="//slothsoft@schema/html/documentation" />
+                <link-stylesheet ref="/css/theme" />
+                <link-dictionary ref="/dictionary" />
+            </fragment>
+        </fragment>
+    </fragment>
 </assets>
