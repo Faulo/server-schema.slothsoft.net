@@ -1270,16 +1270,16 @@
         },
         {
             "name": "slothsoft/core",
-            "version": "1.14.14",
+            "version": "1.14.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Faulo/slothsoft-core.git",
-                "reference": "0f0d1df5da47c91713da7f21427b535dd5a40034"
+                "reference": "f3d871a2e756737e598dca06750df4ef3fca9633"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Faulo/slothsoft-core/zipball/0f0d1df5da47c91713da7f21427b535dd5a40034",
-                "reference": "0f0d1df5da47c91713da7f21427b535dd5a40034",
+                "url": "https://api.github.com/repos/Faulo/slothsoft-core/zipball/f3d871a2e756737e598dca06750df4ef3fca9633",
+                "reference": "f3d871a2e756737e598dca06750df4ef3fca9633",
                 "shasum": ""
             },
             "require": {
@@ -1340,9 +1340,9 @@
             ],
             "support": {
                 "issues": "https://github.com/Faulo/slothsoft-core/issues",
-                "source": "https://github.com/Faulo/slothsoft-core/tree/1.14.14"
+                "source": "https://github.com/Faulo/slothsoft-core/tree/1.14.15"
             },
-            "time": "2026-01-07T00:25:18+00:00"
+            "time": "2026-01-11T18:06:37+00:00"
         },
         {
             "name": "slothsoft/cron",
@@ -1405,16 +1405,16 @@
         },
         {
             "name": "slothsoft/farah",
-            "version": "1.26.19",
+            "version": "1.26.25",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Faulo/slothsoft-farah.git",
-                "reference": "e1178b32a98a4bef02e3c0335fc80c2e7e820bfc"
+                "reference": "4703e0db6a23195f2ca45ea9cba5fe4de9a70cb2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Faulo/slothsoft-farah/zipball/e1178b32a98a4bef02e3c0335fc80c2e7e820bfc",
-                "reference": "e1178b32a98a4bef02e3c0335fc80c2e7e820bfc",
+                "url": "https://api.github.com/repos/Faulo/slothsoft-farah/zipball/4703e0db6a23195f2ca45ea9cba5fe4de9a70cb2",
+                "reference": "4703e0db6a23195f2ca45ea9cba5fe4de9a70cb2",
                 "shasum": ""
             },
             "require": {
@@ -1478,22 +1478,22 @@
             ],
             "support": {
                 "issues": "https://github.com/Faulo/slothsoft-farah/issues",
-                "source": "https://github.com/Faulo/slothsoft-farah/tree/1.26.19"
+                "source": "https://github.com/Faulo/slothsoft-farah/tree/1.26.25"
             },
-            "time": "2026-01-09T21:48:32+00:00"
+            "time": "2026-01-15T00:11:23+00:00"
         },
         {
             "name": "slothsoft/savegame",
-            "version": "1.1.7",
+            "version": "1.3.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Faulo/slothsoft-savegame.git",
-                "reference": "527cc07ac4560834006cb9937acfe8f203c0529a"
+                "reference": "b3a0564bbbdb2498dbd922d95739f29ef253a846"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Faulo/slothsoft-savegame/zipball/527cc07ac4560834006cb9937acfe8f203c0529a",
-                "reference": "527cc07ac4560834006cb9937acfe8f203c0529a",
+                "url": "https://api.github.com/repos/Faulo/slothsoft-savegame/zipball/b3a0564bbbdb2498dbd922d95739f29ef253a846",
+                "reference": "b3a0564bbbdb2498dbd922d95739f29ef253a846",
                 "shasum": ""
             },
             "require": {
@@ -1504,7 +1504,7 @@
             },
             "require-dev": {
                 "phpunit/phpunit": "~9.6.23",
-                "slothsoft/farah-testing": "^1.1.2"
+                "slothsoft/farah-testing": "^1.2.0"
             },
             "suggest": {
                 "ext-ds": "*"
@@ -1512,7 +1512,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-main": "1.1.x-dev"
+                    "dev-main": "1.3.x-dev"
                 }
             },
             "autoload": {
@@ -1542,9 +1542,9 @@
             ],
             "support": {
                 "issues": "https://github.com/Faulo/slothsoft-savegame/issues",
-                "source": "https://github.com/Faulo/slothsoft-savegame/tree/1.1.7"
+                "source": "https://github.com/Faulo/slothsoft-savegame/tree/1.3.3"
             },
-            "time": "2025-12-26T23:40:39+00:00"
+            "time": "2026-01-18T23:12:48+00:00"
         },
         {
             "name": "slothsoft/schema",
@@ -3721,16 +3721,16 @@
         },
         {
             "name": "slothsoft/farah-testing",
-            "version": "1.1.8",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Faulo/slothsoft-farah-testing.git",
-                "reference": "6f0222ce0cf98a8a7f12a8c64e76cea1651b1438"
+                "reference": "1a4ecbb434ba42163ba0bd42ed2919e131399b49"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Faulo/slothsoft-farah-testing/zipball/6f0222ce0cf98a8a7f12a8c64e76cea1651b1438",
-                "reference": "6f0222ce0cf98a8a7f12a8c64e76cea1651b1438",
+                "url": "https://api.github.com/repos/Faulo/slothsoft-farah-testing/zipball/1a4ecbb434ba42163ba0bd42ed2919e131399b49",
+                "reference": "1a4ecbb434ba42163ba0bd42ed2919e131399b49",
                 "shasum": ""
             },
             "require": {
@@ -3746,7 +3746,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-main": "1.1.x-dev"
+                    "dev-main": "1.2.x-dev"
                 }
             },
             "autoload": {
@@ -3771,9 +3771,9 @@
             ],
             "support": {
                 "issues": "https://github.com/Faulo/slothsoft-farah-testing/issues",
-                "source": "https://github.com/Faulo/slothsoft-farah-testing/tree/1.1.8"
+                "source": "https://github.com/Faulo/slothsoft-farah-testing/tree/1.2.0"
             },
-            "time": "2026-01-07T01:21:01+00:00"
+            "time": "2026-01-17T16:16:57+00:00"
         },
         {
             "name": "symfony/browser-kit",
