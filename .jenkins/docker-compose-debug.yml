@@ -3,12 +3,19 @@ services:
         container_name: ${STACK_NAME}_frontend
         image: faulo/farah:${PHP_VERSION}
         volumes:
+            - ../composer.json:${DOCKER_WORKDIR}/composer.json
             - ../assets:${DOCKER_WORKDIR}/assets
-            - ../cache:${DOCKER_WORKDIR}/cache
-            - ../data:${DOCKER_WORKDIR}/data
+            - ../src:${DOCKER_WORKDIR}/src
             - ../html:${DOCKER_WORKDIR}/html
             - ../log:${DOCKER_WORKDIR}/log
-            - ../src:${DOCKER_WORKDIR}/src
-            - ../composer.json:${DOCKER_WORKDIR}/composer.json
+            - ../data:${DOCKER_WORKDIR}/data
+            - ../.farah-vendor:${DOCKER_WORKDIR}/vendor
+            - cache:${DOCKER_WORKDIR}/cache
         ports:
             - 80:80
+
+volumes:
+    cache:
+        driver_opts:
+            type: tmpfs
+            device: tmpfs

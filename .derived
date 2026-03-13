@@ -2,3 +2,5 @@
 /cache
 /log
 /vendor
+
+/.farah-vendor
