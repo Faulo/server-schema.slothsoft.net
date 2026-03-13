@@ -17,8 +17,8 @@
 		}
 	},
 	"require" : {
-		"slothsoft/core" : "^1.14",
-		"slothsoft/farah" : "^1.26",
+		"slothsoft/core" : "^1.14.19",
+		"slothsoft/farah" : "^1.27.1",
 		"slothsoft/schema" : "^1.5.14",
 		"slothsoft/amber" : "^1.1",
 		"slothsoft/cron" : "^1.0",
@@ -26,18 +26,18 @@
 	},
 	"require-dev" : {
 		"phpunit/phpunit" : "~9.6.23",
-		"slothsoft/farah-testing" : "^1.1.2"
+		"slothsoft/farah-testing" : "^1.3.1"
 	},
 	"autoload-dev" : {
 		"psr-4" : {
-			"Slothsoft\\Server\\Schema\\Tests\\" : "tests"
+			"Slothsoft\\Server\\Schema\\" : "tests"
 		}
 	},
 	"scripts" : {
 		"farah-asset" : "@php vendor/slothsoft/farah/scripts/farah-asset.php",
 		"farah-page" : "@php vendor/slothsoft/farah/scripts/farah-page.php"
 	},
-	"homepage" : "http://schema.slothsoft.net",
+	"homepage" : "https://schema.slothsoft.net",
 	"authors" : [{
 			"name" : "Daniel Schulz",
 			"email" : "info.slothsoft@gmail.com"
