@@ -1,6 +1,6 @@
 pipeline {
     agent {
-        label 'mörkö'
+        label 'Mörkö'
     }
     options {
         disableConcurrentBuilds()
