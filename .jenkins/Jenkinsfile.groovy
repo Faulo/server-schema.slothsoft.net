@@ -12,11 +12,12 @@ pipeline {
             steps {
                 script {
                     withEnvFile {
-                        stage ('Run tests') {
-                            docker.image("faulo/farah:${PHP_VERSION}").inside('-v /var/vhosts/${SERVER_NAME}:${WORKSPACE}/data') {
+                        docker.image("faulo/farah:${PHP_VERSION}").inside('-v /var/vhosts/${SERVER_NAME}:${WORKSPACE}/data') {
+                            stage ('Composer setup') {
                                 callShell 'composer install --no-interaction --optimize-autoloader --classmap-authoritative'
                                 callShell 'composer exec server-clean cache logs'
-
+                            }
+                            stage ('Run tests') {
                                 catchError(buildResult: 'UNSTABLE', catchInterruptions: false) {
                                     callShell 'composer exec phpunit -- --log-junit report.xml'
                                 }
