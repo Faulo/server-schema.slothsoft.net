@@ -12,7 +12,7 @@ pipeline {
             steps {
                 script {
                     withEnvFile {
-                        docker.image("faulo/farah:${PHP_VERSION}").inside('-v /var/vhosts/${SERVER_NAME}:${WORKSPACE}/data') {
+                        docker.image("faulo/farah:${PHP_VERSION}").inside('-v ${STACK_NAME}_farah-data:${WORKSPACE}/data') {
                             stage ('Composer setup') {
                                 callShell 'composer install --no-interaction --optimize-autoloader --classmap-authoritative'
                                 callShell 'composer exec server-clean cache logs'
