@@ -11,3 +11,4 @@
 
 # Files that keep changing
 /phpunit.xml
+/php-docker-settings.xml
