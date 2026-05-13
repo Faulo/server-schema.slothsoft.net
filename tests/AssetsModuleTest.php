@@ -9,6 +9,6 @@ use Slothsoft\FarahTesting\Module\AbstractModuleTest;
 final class AssetsModuleTest extends AbstractModuleTest {
     
     protected static function getManifestAuthority(): FarahUrlAuthority {
-        return FarahUrlAuthority::createFromVendorAndModule('slothsoft', 'archive.slothsoft.net');
+        return FarahUrlAuthority::createFromVendorAndModule('slothsoft', 'schema.slothsoft.net');
     }
 }
