@@ -1,10 +1,11 @@
 <?php
 declare(strict_types = 1);
+
 namespace Slothsoft\Server\Schema;
 
-use Slothsoft\Core\ServerEnvironment;
 use Slothsoft\Core\DBMS\Authority;
 use Slothsoft\Core\DBMS\Client;
+use Slothsoft\Core\ServerEnvironment;
 use Slothsoft\Farah\Dictionary;
 use Slothsoft\Farah\Kernel;
 use Slothsoft\Farah\Module\Module;

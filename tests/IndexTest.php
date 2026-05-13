@@ -1,11 +1,12 @@
 <?php
 declare(strict_types = 1);
+
 namespace Slothsoft\Server\Schema;
 
-use Slothsoft\Farah\Http\MessageFactory;
-use Slothsoft\FarahTesting\Module\AbstractTestCase;
-use Slothsoft\Farah\RequestStrategy\LookupPageStrategy;
 use DOMDocument;
+use Slothsoft\Farah\Http\MessageFactory;
+use Slothsoft\Farah\RequestStrategy\LookupPageStrategy;
+use Slothsoft\FarahTesting\Module\AbstractTestCase;
 
 final class IndexTest extends AbstractTestCase {
     
@@ -24,4 +25,3 @@ final class IndexTest extends AbstractTestCase {
         $this->assertTrue($doc->loadXML($data));
     }
 }
-
