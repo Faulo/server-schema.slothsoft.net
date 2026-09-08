@@ -15,6 +15,7 @@ webimage_extra_packages:
     - php${DDEV_PHP_VERSION}-ctype
     - php${DDEV_PHP_VERSION}-curl
     - php${DDEV_PHP_VERSION}-dom
+    - php${DDEV_PHP_VERSION}-fileinfo
     - php${DDEV_PHP_VERSION}-gd
     - php${DDEV_PHP_VERSION}-iconv
     - php${DDEV_PHP_VERSION}-imagick
@@ -22,7 +23,6 @@ webimage_extra_packages:
     - php${DDEV_PHP_VERSION}-phar
     - php${DDEV_PHP_VERSION}-sockets
     - php${DDEV_PHP_VERSION}-tokenizer
-    - php${DDEV_PHP_VERSION}-xml
     - php${DDEV_PHP_VERSION}-xmlwriter
     - php${DDEV_PHP_VERSION}-xsl
     - php${DDEV_PHP_VERSION}-zip
