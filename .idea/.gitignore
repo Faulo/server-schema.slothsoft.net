@@ -1,14 +1,22 @@
 # Default ignored files
 /shelf/
 /workspace.xml
+
 # Editor-based HTTP Client requests
 /httpRequests/
+
 # Ignored default folder with query files
 /queries/
+
 # Datasource local storage ignored files
 /dataSources/
 /dataSources.local.xml
+/db-forest-config.xml
 
 # Files that keep changing
 /phpunit.xml
 /php-docker-settings.xml
+/dataSources.xml
+/php.xml
+/php-test-framework.xml
+/remote-mappings.xml

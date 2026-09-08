@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectResources">
+    <resource url="farah://slothsoft@amber/schema/amberdata/0.1" location="$PROJECT_DIR$/vendor/slothsoft/amber/assets/schema/amberdata/0.1.xsd"/>
+    <resource url="farah://slothsoft@cron/schema/instructions/0.1" location="$PROJECT_DIR$/vendor/slothsoft/cron/assets/schema/instructions/0.1.xsd"/>
+    <resource url="farah://slothsoft@farah/schema/dictionary/0.1" location="$PROJECT_DIR$/vendor/slothsoft/farah/assets/schema/dictionary/0.1.xsd"/>
+    <resource url="farah://slothsoft@farah/schema/dictionary/1.0" location="$PROJECT_DIR$/vendor/slothsoft/farah/assets/schema/dictionary/1.0.xsd"/>
+    <resource url="farah://slothsoft@farah/schema/module/1.0" location="$PROJECT_DIR$/vendor/slothsoft/farah/assets/schema/module/1.0.xsd"/>
+    <resource url="farah://slothsoft@farah/schema/module/1.1" location="$PROJECT_DIR$/vendor/slothsoft/farah/assets/schema/module/1.1.xsd"/>
+    <resource url="farah://slothsoft@farah/schema/sitemap/1.0" location="$PROJECT_DIR$/vendor/slothsoft/farah/assets/schema/sitemap/1.0.xsd"/>
+    <resource url="farah://slothsoft@farah/schema/sitemap/1.1" location="$PROJECT_DIR$/vendor/slothsoft/farah/assets/schema/sitemap/1.1.xsd"/>
+    <resource url="farah://slothsoft@farah/schema/xml/1.0" location="$PROJECT_DIR$/vendor/slothsoft/farah/assets/schema/xml/1.0.xsd"/>
+    <resource url="farah://slothsoft@savegame/schema/editor/0.2" location="$PROJECT_DIR$/vendor/slothsoft/savegame/assets/schema/editor/0.2.xsd"/>
+    <resource url="farah://slothsoft@savegame/schema/editor/0.3" location="$PROJECT_DIR$/vendor/slothsoft/savegame/assets/schema/editor/0.3.xsd"/>
+    <resource url="farah://slothsoft@savegame/schema/editor/0.4" location="$PROJECT_DIR$/vendor/slothsoft/savegame/assets/schema/editor/0.4.xsd"/>
+    <resource url="farah://slothsoft@schema.slothsoft.net/schemata/trialoftwo/database/0.1" location="$PROJECT_DIR$/assets/schemata/trialoftwo/database/0.1.xsd"/>
+    <resource url="farah://slothsoft@schema.slothsoft.net/schemata/trialoftwo/database/0.2" location="$PROJECT_DIR$/assets/schemata/trialoftwo/database/0.2.xsd"/>
+    <resource url="farah://slothsoft@schema/schema/computers/1.0" location="$PROJECT_DIR$/vendor/slothsoft/schema/assets/schema/computers/1.0.xsd"/>
+    <resource url="farah://slothsoft@schema/schema/historical-games-night/1.0" location="$PROJECT_DIR$/vendor/slothsoft/schema/assets/schema/historical-games-night/1.0.xsd"/>
+    <resource url="farah://slothsoft@schema/schema/historical-games-night/2.0" location="$PROJECT_DIR$/vendor/slothsoft/schema/assets/schema/historical-games-night/2.0.xsd"/>
+    <resource url="farah://slothsoft@schema/schema/junit/1.0" location="$PROJECT_DIR$/vendor/slothsoft/schema/assets/schema/junit/1.0.xsd"/>
+    <resource url="farah://slothsoft@schema/schema/presskit/1.0" location="$PROJECT_DIR$/vendor/slothsoft/schema/assets/schema/presskit/1.0.xsd"/>
+    <resource url="farah://slothsoft@schema/schema/presskit/1.1" location="$PROJECT_DIR$/vendor/slothsoft/schema/assets/schema/presskit/1.1.xsd"/>
+    <resource url="farah://slothsoft@schema/schema/versioning/1.0" location="$PROJECT_DIR$/vendor/slothsoft/schema/assets/schema/versioning/1.0.xsd"/>
+    <resource url="http://schema.slothsoft.net/amber/amberdata" location="$PROJECT_DIR$/vendor/slothsoft/amber/assets/schema/amberdata/0.1.xsd"/>
+    <resource url="http://schema.slothsoft.net/cron/instructions" location="$PROJECT_DIR$/vendor/slothsoft/cron/assets/schema/instructions/0.1.xsd"/>
+    <resource url="http://schema.slothsoft.net/farah/dictionary" location="$PROJECT_DIR$/vendor/slothsoft/farah/assets/schema/dictionary/1.0.xsd"/>
+    <resource url="http://schema.slothsoft.net/farah/module" location="$PROJECT_DIR$/vendor/slothsoft/farah/assets/schema/module/1.1.xsd"/>
+    <resource url="http://schema.slothsoft.net/farah/sitemap" location="$PROJECT_DIR$/vendor/slothsoft/farah/assets/schema/sitemap/1.1.xsd"/>
+    <resource url="http://schema.slothsoft.net/savegame/editor" location="$PROJECT_DIR$/vendor/slothsoft/savegame/assets/schema/editor/0.4.xsd"/>
+    <resource url="http://schema.slothsoft.net/schema/computers" location="$PROJECT_DIR$/vendor/slothsoft/schema/assets/schema/computers/1.0.xsd"/>
+    <resource url="http://schema.slothsoft.net/schema/historical-games-night" location="$PROJECT_DIR$/vendor/slothsoft/schema/assets/schema/historical-games-night/2.0.xsd"/>
+    <resource url="http://schema.slothsoft.net/schema/presskit" location="$PROJECT_DIR$/vendor/slothsoft/schema/assets/schema/presskit/1.1.xsd"/>
+    <resource url="http://schema.slothsoft.net/schema/versioning" location="$PROJECT_DIR$/vendor/slothsoft/schema/assets/schema/versioning/1.0.xsd"/>
+    <resource url="http://schema.slothsoft.net/trialoftwo/database" location="$PROJECT_DIR$/assets/schemata/trialoftwo/database/0.2.xsd"/>
+    <resource url="http://symfony.com/schema/dic/services" location="$PROJECT_DIR$/vendor/symfony/dependency-injection/Loader/schema/dic/services/services-1.0.xsd"/>
+    <resource url="http://www.w3.org/XML/1998/namespace" location="$PROJECT_DIR$/vendor/slothsoft/farah/assets/schema/xml/1.0.xsd"/>
+    <resource url="https://phar.io/xml/manifest/1.0" location="$PROJECT_DIR$/vendor/phar-io/manifest/manifest.xsd"/>
+    <CATALOG_PROPERTIES>$PROJECT_DIR$/catalog.properties</CATALOG_PROPERTIES>
+  </component>
+</project>

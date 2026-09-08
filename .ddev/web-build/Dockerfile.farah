@@ -1,0 +1,2 @@
+COPY --from=farah /farah/ /farah/
+COPY --from=farah /etc/apache2/conf-available/custom.conf /etc/apache2/conf-enabled/farah.conf

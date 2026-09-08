@@ -4,8 +4,14 @@
 # Changelog
 # =========
 #
+## [1.5.2] - 2026-08-29
+# - Disabled the default maximum line length.
+#
+## [1.5.1] - 2026-08-29
+# - Translated comments to English.
+#
 ## [1.5.0] - 2026-08-28
-# - Java and Groovy support
+# - Groovy support
 #
 ## [1.4.0] - 2026-08-17
 # - Java support
@@ -33,16 +39,16 @@
 
 root = true
 
-#### Wichtige EditorConfig-Optionen ####
+#### Important EditorConfig options ####
 
 [*]
 charset = utf-8
 
-# Einzüge und Abstände
+# Indentation and spacing
 indent_size = 4
 indent_style = space
 tab_width = 4
-max_line_length = 200
+max_line_length = off
 
 # application/xml
 ij_xml_space_inside_empty_tag = true
@@ -51,32 +57,52 @@ ij_xml_space_inside_empty_tag = true
 [*.{yml,yaml}]
 indent_size = 2
 
+# Groovy files
+[*.groovy]
+
+#### JetBrains / IntelliJ IDEA ####
+
+ij_continuation_indent_size = 4
+ij_any_keep_indents_on_empty_lines = false
+ij_groovy_brace_style = end_of_line
+ij_groovy_class_brace_style = end_of_line
+ij_groovy_method_brace_style = end_of_line
+ij_groovy_keep_line_breaks = true
+ij_groovy_align_multiline_list_or_map = false
+ij_groovy_align_named_args_in_map = false
+ij_groovy_space_before_closure_lbrace = true
+ij_groovy_space_in_named_argument_before_colon = false
+ij_groovy_space_in_named_argument = true
+ij_groovy_space_within_list_or_map = false
+ij_groovy_space_within_gstring_injection_braces = false
+ij_groovy_wrap_chain_calls_after_dot = false
+ij_groovy_use_flying_geese_braces = false
+
 # Java
 [*.java]
 
 end_of_line = lf
 insert_final_newline = true
 trim_trailing_whitespace = true
-max_line_length = 120
 
 ij_visual_guides = 120
 ij_java_class_count_to_use_import_on_demand = 999
-ij_java_imports_layout = $*,|,*
+ij_java_imports_layout = $*, |, *
 ij_java_layout_static_imports_separately = true
 ij_java_names_count_to_use_import_on_demand = 999
 ij_java_packages_to_use_import_on_demand =
 ij_java_use_single_class_imports = true
 
-# PHP-Dateien
+# PHP files
 [*.php]
 
-# Einstellungen für neue Zeilen
+# New line preferences
 trim_trailing_whitespace = false
 end_of_line = lf
 
 #### JetBrains / PhpStorm ####
 
-# Einzüge und Formatter-Tags
+# Indentation and formatter tags
 ij_continuation_indent_size = 4
 ij_formatter_off_tag = @formatter:off
 ij_formatter_on_tag = @formatter:on
@@ -85,7 +111,7 @@ ij_any_keep_indents_on_empty_lines = true
 ij_visual_guides = none
 ij_wrap_on_typing = false
 
-# Zeilenumbrüche und Klammerstil: öffnende geschweifte Klammern bleiben in derselben Zeile.
+# Line breaks and brace style: opening braces remain on the same line.
 ij_php_block_brace_style = end_of_line
 ij_php_class_brace_style = end_of_line
 ij_php_method_brace_style = end_of_line
@@ -95,7 +121,7 @@ ij_php_else_on_new_line = false
 ij_php_finally_on_new_line = false
 ij_php_while_on_new_line = false
 
-# Leere Zeilen, grob aus Eclipse übernommen.
+# Blank lines, roughly based on Eclipse.
 ij_php_blank_lines_after_imports = 0
 ij_php_blank_lines_before_imports = 0
 ij_php_blank_lines_between_imports = 0
@@ -109,12 +135,12 @@ ij_php_keep_blank_lines_in_declarations = 1
 ij_php_keep_blank_lines_after_lbrace = 0
 ij_php_keep_blank_lines_before_right_brace = 0
 
-# Einrückung in Blöcken, switch/case und match-Armen.
+# Indentation in blocks, switch/case statements, and match arms.
 ij_php_indent_case_from_switch = true
 ij_php_indent_break_from_case = true
 ij_php_keep_indents_on_empty_lines = true
 
-# Kommas, Semikolons und Ternary-Operator.
+# Commas, semicolons, and the ternary operator.
 ij_php_space_after_comma = true
 ij_php_space_before_comma = false
 ij_php_space_after_for_semicolon = true
@@ -123,7 +149,7 @@ ij_php_space_after_quest = true
 ij_php_space_before_quest = true
 ij_php_space_between_ternary_quest_and_colon = false
 
-# Doppelpunkte: kein Space vor Return-Type / Named Argument / Enum-Backed-Type, aber Space danach.
+# Colons: no space before return types, named arguments, or enum backing types, but a space after.
 ij_php_space_before_colon_in_return_type = false
 ij_php_space_after_colon_in_return_type = true
 ij_php_space_before_colon_in_named_argument = false
@@ -131,7 +157,7 @@ ij_php_space_after_colon_in_named_argument = true
 ij_php_space_before_colon_in_enum_backed_type = false
 ij_php_space_after_colon_in_enum_backed_type = true
 
-# Klammern: Space vor Kontrollfluss-Klammern, kein Space bei Deklarationen/Aufrufen.
+# Parentheses: a space before control-flow parentheses, but none in declarations or calls.
 ij_php_space_before_catch_parentheses = true
 ij_php_space_before_for_parentheses = true
 ij_php_space_before_if_parentheses = true
@@ -141,7 +167,7 @@ ij_php_space_before_method_parentheses = false
 ij_php_space_before_method_call_parentheses = false
 ij_php_space_before_short_closure_left_parenthesis = false
 
-# Geschweifte Klammern: ein Space davor.
+# Braces: one space before.
 ij_php_space_before_catch_left_brace = true
 ij_php_space_before_class_left_brace = true
 ij_php_space_before_closure_left_parenthesis = true
@@ -155,7 +181,7 @@ ij_php_space_before_switch_left_brace = true
 ij_php_space_before_try_left_brace = true
 ij_php_space_before_while_left_brace = true
 
-# Keine Spaces innerhalb runder/eckiger Klammern.
+# No spaces within parentheses or brackets.
 ij_php_spaces_within_array_initializer_braces = false
 ij_php_spaces_within_brackets = false
 ij_php_spaces_within_catch_parentheses = false
@@ -167,7 +193,7 @@ ij_php_spaces_within_parentheses = false
 ij_php_spaces_within_switch_parentheses = false
 ij_php_spaces_within_while_parentheses = false
 
-# Operatoren.
+# Operators.
 ij_php_concat_spaces = true
 ij_php_spaces_around_additive_operators = true
 ij_php_spaces_around_assignment_operators = true
@@ -181,12 +207,12 @@ ij_php_spaces_around_shift_operators = true
 ij_php_spaces_around_unary_operator = false
 ij_php_spaces_around_arrow = false
 
-# PHP-spezifisch: PSR-kompatibler Cast-Abstand aus dem Eclipse-Profil.
+# PHP-specific: PSR-compatible cast spacing from the Eclipse profile.
 ij_php_space_after_type_cast = true
 ij_php_space_after_unary_not = true
 ij_php_space_before_unary_not = false
 
-# Keine vertikale Ausrichtung erzwingen.
+# Do not enforce vertical alignment.
 ij_php_align_assignments = false
 ij_php_align_class_constants = false
 ij_php_align_enum_cases = false
@@ -198,7 +224,7 @@ ij_php_align_multiline_array_initializer_expression = false
 ij_php_align_multiline_binary_operation = false
 ij_php_align_multiline_parameters = false
 
-# Wrapping: entspricht grob dem sehr hohen Eclipse lineSplit-Wert.
+# Wrapping: roughly matches the very high Eclipse lineSplit value.
 ij_php_array_initializer_wrap = off
 ij_php_assignment_wrap = off
 ij_php_binary_operation_wrap = off
@@ -209,7 +235,7 @@ ij_php_method_call_chain_wrap = off
 ij_php_method_parameters_wrap = off
 ij_php_ternary_operation_wrap = off
 
-# Sonstiges.
+# Miscellaneous.
 ij_php_comma_after_last_argument = false
 ij_php_comma_after_last_array_element = false
 ij_php_comma_after_last_closure_use_var = false
@@ -226,39 +252,39 @@ ij_php_upper_case_null_const = false
 ij_php_variable_naming_style = camel_case
 ij_php_spaces_around_assignment_in_declare = true
 
-# C#-Dateien
+# C# files
 [*.cs]
 
-# Einstellungen für neue Zeilen
+# New line preferences
 trim_trailing_whitespace = false
 end_of_line = crlf
 
-#### .NET-Codierungskonventionen ####
+#### .NET coding conventions ####
 
-# Using-Direktiven organisieren
+# Organize using directives
 dotnet_separate_import_directive_groups = false
 dotnet_sort_system_directives_first = true
 
-# this.- und Me.-Einstellungen
+# this. and Me. preferences
 dotnet_style_qualification_for_event = false:warning
 dotnet_style_qualification_for_field = false:warning
 dotnet_style_qualification_for_method = false:warning
 dotnet_style_qualification_for_property = false:warning
 
-# Einstellungen für Sprachschlüsselwörter und BCL-Typen
+# Language keyword and BCL type preferences
 dotnet_style_predefined_type_for_locals_parameters_members = true:warning
 dotnet_style_predefined_type_for_member_access = true:warning
 
-# Einstellungen für Klammern
+# Parentheses preferences
 dotnet_style_parentheses_in_arithmetic_binary_operators = always_for_clarity:warning
 dotnet_style_parentheses_in_other_binary_operators = always_for_clarity:warning
 dotnet_style_parentheses_in_other_operators = never_if_unnecessary:warning
 dotnet_style_parentheses_in_relational_binary_operators = always_for_clarity:warning
 
-# Einstellungen für Modifizierer
+# Modifier preferences
 dotnet_style_require_accessibility_modifiers = omit_if_default:warning
 
-# Einstellungen für Ausdrucksebene
+# Expression-level preferences
 dotnet_style_coalesce_expression = true:warning
 dotnet_style_collection_initializer = true:warning
 dotnet_style_explicit_tuple_names = true:warning
@@ -273,20 +299,20 @@ dotnet_style_prefer_inferred_tuple_names = true:warning
 dotnet_style_prefer_is_null_check_over_reference_equality_method = true:warning
 dotnet_style_prefer_simplified_interpolation = true:warning
 
-# Einstellungen für Felder
+# Field preferences
 dotnet_style_readonly_field = false:warning
 
-# Einstellungen für Parameter
+# Parameter preferences
 dotnet_code_quality_unused_parameters = all:warning
 
-#### C#-Codierungskonventionen ####
+#### C# coding conventions ####
 
-# Var-Einstellungen
+# var preferences
 csharp_style_var_elsewhere = true:warning
 csharp_style_var_for_built_in_types = false:warning
 csharp_style_var_when_type_is_apparent = true:warning
 
-# Ausdruckskörpermember
+# Expression-bodied members
 csharp_style_expression_bodied_methods = when_on_single_line:none
 csharp_style_expression_bodied_constructors = when_on_single_line:none
 csharp_style_expression_bodied_operators = when_on_single_line:none
@@ -296,23 +322,23 @@ csharp_style_expression_bodied_accessors = when_on_single_line:none
 csharp_style_expression_bodied_lambdas = when_on_single_line:none
 csharp_style_expression_bodied_local_functions = when_on_single_line:none
 
-# Einstellungen für den Musterabgleich
+# Pattern matching preferences
 csharp_style_pattern_matching_over_as_with_null_check = true:warning
 csharp_style_pattern_matching_over_is_with_cast_check = true:warning
 csharp_style_prefer_switch_expression = true:warning
 
-# Einstellungen für NULL-Überprüfung
+# Null-checking preferences
 csharp_style_conditional_delegate_call = true:warning
 
-# Einstellungen für Modifizierer
+# Modifier preferences
 csharp_prefer_static_local_function = true:warning
 csharp_preferred_modifier_order = public, private, protected, internal, static, extern, new, virtual, abstract, sealed, override, readonly, unsafe, volatile, async:warning
 
-# Einstellungen für Codeblöcke
+# Code block preferences
 csharp_prefer_braces = true:warning
 csharp_prefer_simple_using_statement = true:warning
 
-# Einstellungen für Ausdrucksebene
+# Expression-level preferences
 csharp_prefer_simple_default_expression = true:warning
 csharp_style_deconstructed_variable_declaration = true:warning
 csharp_style_inlined_variable_declaration = true:warning
@@ -323,7 +349,7 @@ csharp_style_throw_expression = true:warning
 csharp_style_unused_value_assignment_preference = discard_variable:none
 csharp_style_unused_value_expression_statement_preference = discard_variable:none
 
-# Einstellungen für using-Anweisungen
+# using directive preferences
 csharp_using_directive_placement = outside_namespace:warning
 
 # New line preferences
@@ -331,9 +357,9 @@ csharp_style_allow_blank_line_after_colon_in_constructor_initializer_experimenta
 csharp_style_allow_blank_lines_between_consecutive_braces_experimental = false
 csharp_style_allow_embedded_statements_on_same_line_experimental = false
 
-#### C#-Formatierungsregeln ####
+#### C# formatting rules ####
 
-# Einstellungen für neue Zeilen
+# New line preferences
 csharp_new_line_before_catch = false
 csharp_new_line_before_else = false
 csharp_new_line_before_finally = false
@@ -342,7 +368,7 @@ csharp_new_line_before_members_in_object_initializers = true
 csharp_new_line_before_open_brace = none
 csharp_new_line_between_query_expression_clauses = true
 
-# Einstellungen für Einrückung
+# Indentation preferences
 csharp_indent_block_contents = true
 csharp_indent_braces = false
 csharp_indent_case_contents = true
@@ -350,7 +376,7 @@ csharp_indent_case_contents_when_block = false
 csharp_indent_labels = flush_left
 csharp_indent_switch_labels = true
 
-# Einstellungen für Abstände
+# Spacing preferences
 csharp_space_after_cast = false
 csharp_space_after_colon_in_inheritance_clause = true
 csharp_space_after_comma = true
@@ -374,13 +400,13 @@ csharp_space_between_method_declaration_parameter_list_parentheses = false
 csharp_space_between_parentheses = false
 csharp_space_between_square_brackets = false
 
-# Umbrucheinstellungen
+# Line wrapping preferences
 csharp_preserve_single_line_blocks = true
 csharp_preserve_single_line_statements = false
 
-#### Benennungsstile ####
+#### Naming styles ####
 
-# Benennungsregeln
+# Naming rules
 
 dotnet_naming_rule.schnittstelle_should_be_beginnt_mit_i.severity = warning
 dotnet_naming_rule.schnittstelle_should_be_beginnt_mit_i.symbols = schnittstelle
@@ -414,7 +440,7 @@ dotnet_naming_rule.local_event_should_be_camelcase.severity = warning
 dotnet_naming_rule.local_event_should_be_camelcase.symbols = event
 dotnet_naming_rule.local_event_should_be_camelcase.style = oncamelcase
 
-# Symbolspezifikationen
+# Symbol specifications
 
 dotnet_naming_symbols.schnittstelle.applicable_kinds = interface
 dotnet_naming_symbols.schnittstelle.applicable_accessibilities = public, internal, private, protected, protected_internal
@@ -429,7 +455,7 @@ dotnet_naming_symbols.type.applicable_accessibilities = *
 dotnet_naming_symbols.type.required_modifiers =
 
 dotnet_naming_symbols.non_method_member.applicable_kinds = property, field
-dotnet_naming_symbols.non_method_member.applicable_accessibilities = public, internal, friend, protected, protected_internal, protected_friend
+dotnet_naming_symbols.non_method_member.applicable_accessibilities = *
 dotnet_naming_symbols.non_method_member.required_modifiers =
 
 dotnet_naming_symbols.event.applicable_kinds = event
@@ -448,7 +474,7 @@ dotnet_naming_symbols.constants.applicable_kinds = field
 dotnet_naming_symbols.constants.applicable_accessibilities = *
 dotnet_naming_symbols.constants.required_modifiers = const
 
-# Benennungsstile
+# Naming styles
 
 dotnet_naming_style.pascalcase.required_prefix =
 dotnet_naming_style.pascalcase.required_suffix =
@@ -571,24 +597,3 @@ dotnet_diagnostic.UNT0033.severity = warning
 
 # @UNT0004+UNT0005: https://docs.unity3d.com/ScriptReference/Time-fixedDeltaTime.html
 # @UNT0007+UNT0008: https://stackoverflow.com/questions/58487442/why-does-resharper-not-suggest-using-null-propagation-for-both-of-these-blocks
-
-# Groovy-Dateien
-[*.groovy]
-
-#### JetBrains / IntelliJ IDEA ####
-
-ij_continuation_indent_size = 4
-ij_any_keep_indents_on_empty_lines = false
-ij_groovy_brace_style = end_of_line
-ij_groovy_class_brace_style = end_of_line
-ij_groovy_method_brace_style = end_of_line
-ij_groovy_keep_line_breaks = true
-ij_groovy_align_multiline_list_or_map = false
-ij_groovy_align_named_args_in_map = false
-ij_groovy_space_before_closure_lbrace = true
-ij_groovy_space_in_named_argument_before_colon = false
-ij_groovy_space_in_named_argument = true
-ij_groovy_space_within_list_or_map = false
-ij_groovy_space_within_gstring_injection_braces = false
-ij_groovy_wrap_chain_calls_after_dot = false
-ij_groovy_use_flying_geese_braces = false

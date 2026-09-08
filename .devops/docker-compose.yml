@@ -1,0 +1,46 @@
+services:
+  frontend:
+    image: faulo/farah:${PHP_VERSION}
+    environment:
+      SERVER_NAME: ${SERVER_NAME}
+    volumes:
+      - farah-app:/var/www
+      - farah-data:/var/www/data
+      - farah-cache:/var/www/cache
+      - farah-log:/var/www/log
+    networks:
+      - zerotier
+    deploy:
+      endpoint_mode: dnsrr
+      replicas: 1
+      placement:
+        constraints:
+          - node.hostname == groke
+      labels:
+        - traefik.enable=true
+        - traefik.swarm.network=zerotier
+        - traefik.http.routers.${STACK_NAME}.rule=Host(`${SERVER_NAME}`)
+        - traefik.http.services.${STACK_NAME}.loadbalancer.server.port=80
+      update_config:
+        order: stop-first
+      restart_policy:
+        condition: any
+
+networks:
+  zerotier:
+    external: true
+
+volumes:
+  farah-app:
+    name: ${STACK_NAME}_farah-app
+    external: true
+  farah-data:
+    name: ${STACK_NAME}_farah-data
+    external: true
+  farah-cache:
+    driver: local
+    driver_opts:
+      type: tmpfs
+      device: tmpfs
+      o: mode=0777
+  farah-log:

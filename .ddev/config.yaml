@@ -1,0 +1,29 @@
+name: schema
+type: php
+docroot: html
+php_version: "8.0"
+webserver_type: apache-fpm
+xdebug_enabled: false
+database:
+  type: mariadb
+  version: "11.8"
+composer_version: "2"
+disable_upload_dirs_warning: true
+web_environment:
+  - SERVER_NAME=schema.ddev.site
+webimage_extra_packages:
+    - php${DDEV_PHP_VERSION}-ctype
+    - php${DDEV_PHP_VERSION}-curl
+    - php${DDEV_PHP_VERSION}-dom
+    - php${DDEV_PHP_VERSION}-gd
+    - php${DDEV_PHP_VERSION}-iconv
+    - php${DDEV_PHP_VERSION}-imagick
+    - php${DDEV_PHP_VERSION}-mbstring
+    - php${DDEV_PHP_VERSION}-phar
+    - php${DDEV_PHP_VERSION}-sockets
+    - php${DDEV_PHP_VERSION}-tokenizer
+    - php${DDEV_PHP_VERSION}-xml
+    - php${DDEV_PHP_VERSION}-xmlwriter
+    - php${DDEV_PHP_VERSION}-xsl
+    - php${DDEV_PHP_VERSION}-zip
+

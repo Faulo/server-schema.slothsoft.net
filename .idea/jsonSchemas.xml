@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JsonSchemaMappingsProjectConfiguration">
+    <state>
+      <map>
+        <entry key="composer.json">
+          <value>
+            <SchemaInfo>
+              <option name="name" value="composer.json" />
+              <option name="relativePathToSchema" value="https://getcomposer.org/schema.json" />
+              <option name="applicationDefined" value="true" />
+              <option name="patterns">
+                <list>
+                  <Item>
+                    <option name="path" value="composer.json" />
+                  </Item>
+                </list>
+              </option>
+            </SchemaInfo>
+          </value>
+        </entry>
+        <entry key="ddev-project">
+          <value>
+            <SchemaInfo>
+              <option name="name" value="ddev-project" />
+              <option name="relativePathToSchema" value="https://raw.githubusercontent.com/ddev/ddev/master/pkg/ddevapp/schema.json" />
+              <option name="applicationDefined" value="true" />
+              <option name="patterns">
+                <list>
+                  <Item>
+                    <option name="path" value=".ddev/config.yaml" />
+                  </Item>
+                </list>
+              </option>
+            </SchemaInfo>
+          </value>
+        </entry>
+      </map>
+    </state>
+  </component>
+</project>
